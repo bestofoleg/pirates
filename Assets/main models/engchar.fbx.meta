@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 18beadede9c3e71428790a410bf25b20
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: arm.l
+    100002: arm.r
+    100004: arm1.l
+    100006: arm1.r
+    100008: arm2.l
+    100010: arm2.r
+    100012: arm3.l
+    100014: arm3.r
+    100016: Armature
+    100018: //RootNode
+    100020: finger.l
+    100022: finger.r
+    100024: finger2.l
+    100026: finger2.r
+    100028: finger3.l
+    100030: finger3.r
+    100032: head
+    100034: head_end
+    100036: leg.l
+    100038: leg.r
+    100040: leg2.l
+    100042: leg2.r
+    100044: leg3.l
+    100046: leg3.r
+    100048: leg4.l
+    100050: leg4.l_end
+    100052: leg4.r
+    100054: leg4.r_end
+    100056: main
+    100058: pasted__Character_English_Captain_01
+    100060: pasted__SM_Wep_Pistol_02
+    100062: pasted__SM_Wep_Rapier_01
+    100064: pasted__SM_Wep_Sabre_01
+    100066: prefinger.l
+    100068: prefinger.l_end
+    100070: prefinger.r
+    100072: prefinger.r_end
+    100074: prefinger2.l
+    100076: prefinger2.l_end
+    100078: prefinger2.r
+    100080: prefinger2.r_end
+    100082: prefinger3.l
+    100084: prefinger3.l_end
+    100086: prefinger3.r
+    100088: prefinger3.r_end
+    100090: spine
+    100092: spine2
+    100094: spine3
+    400000: arm.l
+    400002: arm.r
+    400004: arm1.l
+    400006: arm1.r
+    400008: arm2.l
+    400010: arm2.r
+    400012: arm3.l
+    400014: arm3.r
+    400016: Armature
+    400018: //RootNode
+    400020: finger.l
+    400022: finger.r
+    400024: finger2.l
+    400026: finger2.r
+    400028: finger3.l
+    400030: finger3.r
+    400032: head
+    400034: head_end
+    400036: leg.l
+    400038: leg.r
+    400040: leg2.l
+    400042: leg2.r
+    400044: leg3.l
+    400046: leg3.r
+    400048: leg4.l
+    400050: leg4.l_end
+    400052: leg4.r
+    400054: leg4.r_end
+    400056: main
+    400058: pasted__Character_English_Captain_01
+    400060: pasted__SM_Wep_Pistol_02
+    400062: pasted__SM_Wep_Rapier_01
+    400064: pasted__SM_Wep_Sabre_01
+    400066: prefinger.l
+    400068: prefinger.l_end
+    400070: prefinger.r
+    400072: prefinger.r_end
+    400074: prefinger2.l
+    400076: prefinger2.l_end
+    400078: prefinger2.r
+    400080: prefinger2.r_end
+    400082: prefinger3.l
+    400084: prefinger3.l_end
+    400086: prefinger3.r
+    400088: prefinger3.r_end
+    400090: spine
+    400092: spine2
+    400094: spine3
+    2100000: pasted__Texture_02
+    2100002: pasted__Texture_01
+    2100004: pasted__Texture_03
+    2300000: pasted__SM_Wep_Pistol_02
+    2300002: pasted__SM_Wep_Rapier_01
+    2300004: pasted__SM_Wep_Sabre_01
+    3300000: pasted__SM_Wep_Pistol_02
+    3300002: pasted__SM_Wep_Rapier_01
+    3300004: pasted__SM_Wep_Sabre_01
+    4300000: pasted__SM_Wep_Sabre_01
+    4300002: pasted__SM_Wep_Rapier_01
+    4300004: pasted__SM_Wep_Pistol_02
+    4300006: pasted__Character_English_Captain_01
+    7400000: Armature|idle
+    7400002: Armature|walk
+    9500000: //RootNode
+    13700000: pasted__Character_English_Captain_01
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|idle
+      takeName: Armature|idle
+      firstFrame: 0
+      lastFrame: 174
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|walk
+      takeName: Armature|walk
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
