@@ -9,21 +9,21 @@ public class EconomyInteraction : MonoBehaviour
 
     public string characterUITag;
     
-    public string interactionType;
+    public InteractionType interactionType;
 
     private GameObject playerGameObject;
 
     private GoldView _goldView;
 
-    private CharacterUIController controller;
-    
+    private CharacterUIController _controller;
+
     private void Awake()
     {
         playerGameObject = GameObject.FindWithTag(playerTag);
         GameObject characterUI = GameObject.FindWithTag(characterUITag);
         if (characterUI != null)
         {
-            controller = characterUI.GetComponent<CharacterUIController>();
+            _controller = characterUI.GetComponent<CharacterUIController>();
         }
         else
         {
@@ -35,15 +35,24 @@ public class EconomyInteraction : MonoBehaviour
     {
         if (other.tag.Equals(playerTag))
         {
-            if (interactionType.Equals("Fishman"))
-            {
-                controller.fishmanInteraction.SetActive(true);
-            }
+            _controller.activateFishmanMenu(InteractionType.FISHMAN.Equals(interactionType));
+            _controller.activateGunmanMenu(InteractionType.GUNMAN.Equals(interactionType));
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        controller.fishmanInteraction.SetActive(false);
+        if (other.tag.Equals(playerTag))
+        {
+            if (InteractionType.FISHMAN.Equals(interactionType))
+            {
+                _controller.activateFishmanMenu(false);
+            }
+
+            if (InteractionType.GUNMAN.Equals(interactionType))
+            {
+                _controller.activateGunmanMenu(false);
+            }
+        }
     }
 }

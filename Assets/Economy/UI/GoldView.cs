@@ -7,27 +7,16 @@ using UnityEngine.UI;
 public class GoldView : MonoBehaviour
 {
     public Text goldQuantityText;
-    
-    private int quantity;
+
+    private CharacterUIController _characterUiController;
 
     private void Awake()
     {
-        quantity = 0;
-        goldQuantityText.text = quantity.ToString();
+        _characterUiController = GameObject.FindWithTag("character_ui").GetComponent<CharacterUIController>();
     }
 
     private void Update()
     {
-        goldQuantityText.text = quantity.ToString();
-    }
-
-    public int getGlodQuantity()
-    {
-        return quantity;
-    }
-
-    public void setGoldQuantity(int quantity)
-    {
-        this.quantity = quantity;
+        goldQuantityText.text = _characterUiController.getMoneyValue().ToString();
     }
 }
