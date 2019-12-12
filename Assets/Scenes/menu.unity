@@ -9309,6 +9309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: engchar
       objectReference: {fileID: 0}
+    - target: {fileID: 7966367340311232875, guid: 20127d3fd042d9840ab0057ef6d22bb8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7966367340289920523, guid: 20127d3fd042d9840ab0057ef6d22bb8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9362,11 +9367,6 @@ PrefabInstance:
     - target: {fileID: 7966367340289920523, guid: 20127d3fd042d9840ab0057ef6d22bb8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7966367340311232875, guid: 20127d3fd042d9840ab0057ef6d22bb8,
-        type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7966367339925123419, guid: 20127d3fd042d9840ab0057ef6d22bb8,
@@ -9464,5 +9464,29 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1104209388}
+    - target: {fileID: 7966367340095203543, guid: 20127d3fd042d9840ab0057ef6d22bb8,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02da09a8331ccf84fa8486e4b29ea9af,
+        type: 3}
+    - target: {fileID: 7966367339223654498, guid: 20127d3fd042d9840ab0057ef6d22bb8,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02da09a8331ccf84fa8486e4b29ea9af,
+        type: 3}
+    - target: {fileID: 7966367340291288493, guid: 20127d3fd042d9840ab0057ef6d22bb8,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02da09a8331ccf84fa8486e4b29ea9af,
+        type: 3}
+    - target: {fileID: 4902388174852411443, guid: 20127d3fd042d9840ab0057ef6d22bb8,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02da09a8331ccf84fa8486e4b29ea9af,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20127d3fd042d9840ab0057ef6d22bb8, type: 3}

@@ -6,53 +6,41 @@ public class animators : MonoBehaviour
 {   SimpleTouchController touch;
     Rigidbody rig;
     Animator mainchar;
-    float vertical;
-    float horizontal;
+    SimpleTouchController root;
     Vector3 lastpos;
     void Start()
     {
         touch = GetComponent<PlayerMoveController> ().leftController;
+        root = GetComponent<PlayerMoveController>().rightController;
         rig = GetComponent<Rigidbody>();
         mainchar = GetComponent<Animator>();
         mainchar.SetBool("Walk",false);
+        mainchar.SetBool("Stayroot",false);
     }
 
     // Update is called once per frame
     private void FixedUpdate()
-    
+
     {
         if (touch.GetTouchPosition != Vector2.zero)
         {
 
             mainchar.SetBool("Walk", true);
         }
-        else {
+        else
+        {
 
             mainchar.SetBool("Walk", false);
         }
-
-        lastpos = new Vector3(transform.position.x,transform.position.y,transform.position.z);
-        /*
-        vertical = Input.GetAxis("Vertical");
-        horizontal = Input.GetAxis("Horizontal") ;
-
-
-        if (rig.velocity.z >= -0.1)
+        if (root.GetTouchPosition != Vector2.zero)
         {
-            mainchar.SetBool("Walk", true);
+            mainchar.SetBool("Stayroot", true);
 
         }
-        if (rig.velocity.z == 0)
-            {
-
-            mainchar.SetBool("Walk",false);
-        }
-        if (rig.velocity.z >= 0.1)
+        else
         {
-            mainchar.SetBool("Walk",true);
+            mainchar.SetBool("Stayroot", false);
         }
-*/
-        Debug.Log(Vector3.Distance(transform.position, lastpos));
     }
 
     }
