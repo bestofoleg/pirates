@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class EconomyInteraction : MonoBehaviour
 {
+    public GameObject gunmannomoney;
+    private Inventory money;
     public string playerTag;
 
     public string characterUITag;
@@ -19,6 +21,8 @@ public class EconomyInteraction : MonoBehaviour
 
     private void Awake()
     {
+        GameObject player = GameObject.FindWithTag("Player");
+        money = player.GetComponent<Inventory>();
         playerGameObject = GameObject.FindWithTag(playerTag);
         GameObject characterUI = GameObject.FindWithTag(characterUITag);
         if (characterUI != null)
@@ -27,6 +31,7 @@ public class EconomyInteraction : MonoBehaviour
         }
         else
         {
+            
             Debug.LogError("Error! Game Object with character UI tag " + characterUITag + " cannot found!");
         }
     }
@@ -34,14 +39,18 @@ public class EconomyInteraction : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag.Equals(playerTag))
-        {
+        {   
             _controller.activateFishmanMenu(InteractionType.FISHMAN.Equals(interactionType));
             _controller.activateGunmanMenu(InteractionType.GUNMAN.Equals(interactionType));
+            
         }
+        
+        
     }
 
     private void OnTriggerExit(Collider other)
     {
+        
         if (other.tag.Equals(playerTag))
         {
             if (InteractionType.FISHMAN.Equals(interactionType))
@@ -51,8 +60,28 @@ public class EconomyInteraction : MonoBehaviour
 
             if (InteractionType.GUNMAN.Equals(interactionType))
             {
+                gunmannomoney.SetActive(false);
                 _controller.activateGunmanMenu(false);
             }
+        }
+    }
+    public void OnTriggerStay (Collider other)
+    {
+        
+
+        if (other.tag.Equals(playerTag))
+        {
+            if (InteractionType.GUNMAN.Equals(interactionType)) { 
+            
+            if (money.goldQuantity < 500)
+                {
+                    _controller.activateGunmanMenu(false);
+                    gunmannomoney.SetActive(true);
+                
+                }
+            
+            }
+            
         }
     }
 }

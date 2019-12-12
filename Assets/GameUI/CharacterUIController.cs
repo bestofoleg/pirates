@@ -5,16 +5,17 @@ public class CharacterUIController : MonoBehaviour
     public GoldView goldView;
 
     private Inventory _inventory;
-    
+
     public GameObject fishmanInteractionMenu;
 
     public GameObject gunmanInteractionMenu;
+    
 
     private void Awake()
     {
         GameObject player = GameObject.FindWithTag("Player");
         _inventory = player.GetComponent<Inventory>();
-        
+
     }
 
     public void spendMoney(int quantity)
@@ -40,5 +41,10 @@ public class CharacterUIController : MonoBehaviour
     public void activateGunmanMenu(bool isActive)
     {
         gunmanInteractionMenu.SetActive(isActive);
-    }
+       
+
+    } 
+
+
 }
+
