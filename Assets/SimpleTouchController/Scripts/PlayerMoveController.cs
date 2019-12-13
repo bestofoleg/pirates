@@ -8,7 +8,7 @@ public class PlayerMoveController : MonoBehaviour {
 	// PUBLIC
 	public SimpleTouchController leftController;
 	public SimpleTouchController rightController;
-	public Transform headTrans;
+	public Transform cameraTransform;
 	public float speedMovements = 5f;
 	public float speedContinuousLook = 5f;
 	public float speedProgressiveLook = 10f;
@@ -50,7 +50,7 @@ public class PlayerMoveController : MonoBehaviour {
 
 	void UpdateAim(Vector2 value)
 	{
-		if(headTrans != null)
+		if(cameraTransform != null)
 		{
 			Quaternion rot = Quaternion.Euler(0f,
 				transform.localEulerAngles.y - value.x * Time.deltaTime * -speedProgressiveLook,
@@ -58,11 +58,10 @@ public class PlayerMoveController : MonoBehaviour {
 
 			_rigidbody.MoveRotation(rot);
 
-			rot = Quaternion.Euler(headTrans.localEulerAngles.x - value.y * Time.deltaTime * speedProgressiveLook,
-				0f,
+			rot = Quaternion.Euler(cameraTransform.eulerAngles.x - value.y * Time.deltaTime * speedProgressiveLook,
+				rot.eulerAngles.y,
 				0f);
-			headTrans.localRotation = rot;
-
+			cameraTransform.rotation = rot;
 		}
 		else
 		{

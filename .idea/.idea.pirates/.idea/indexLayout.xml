@@ -19,6 +19,7 @@
       <Path>Temp</Path>
       <Path>models</Path>
       <Path>obj</Path>
+      <Path>pirates</Path>
     </explicitExcludes>
   </component>
 </project>
