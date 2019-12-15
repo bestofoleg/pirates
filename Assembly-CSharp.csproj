@@ -76,6 +76,8 @@
     <Compile Include="Assets\GUI Animator FREE\Scripts\Demo\Demo.cs" />
     <Compile Include="Assets\jump.cs" />
     <Compile Include="Assets\mainscripts\animcam.cs" />
+    <Compile Include="Assets\mainscripts\ata.cs" />
+    <Compile Include="Assets\mainscripts\AtackM.cs" />
     <Compile Include="Assets\mainscripts\chcontrollvision.cs" />
     <Compile Include="Assets\SimpleTouchController\Scripts\Animschar.cs" />
     <Compile Include="Assets\SimpleTouchController\Scripts\InfoTouches.cs" />
