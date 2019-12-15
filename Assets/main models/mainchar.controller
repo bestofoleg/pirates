@@ -652,7 +652,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature_mediumatackidle
+  m_Name: mediumatackidle
   m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
@@ -807,13 +807,13 @@ AnimatorStateMachine:
     m_Position: {x: 276, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102361272345152914}
-    m_Position: {x: 538.9723, y: 197.92847, z: 0}
+    m_Position: {x: 588, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102292835516019682}
-    m_Position: {x: 504, y: 276, z: 0}
+    m_Position: {x: 552, y: 324, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102580790355636704}
-    m_Position: {x: 312, y: 360, z: 0}
+    m_Position: {x: 300, y: 372, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102353943077052434}
     m_Position: {x: 631.78937, y: -50.214165, z: 0}

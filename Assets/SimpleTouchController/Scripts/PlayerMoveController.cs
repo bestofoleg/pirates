@@ -10,7 +10,6 @@ public class PlayerMoveController : MonoBehaviour {
 	public SimpleTouchController rightController;
 	public Transform cameraTransform;
 	public float speedMovements = 5f;
-	
 	public float speedProgressiveLook = 10f;
 
 	// PRIVATE
