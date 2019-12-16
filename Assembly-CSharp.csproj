@@ -78,6 +78,7 @@
     <Compile Include="Assets\mainscripts\animcam.cs" />
     <Compile Include="Assets\mainscripts\Atack.cs" />
     <Compile Include="Assets\mainscripts\chcontrollvision.cs" />
+    <Compile Include="Assets\mainscripts\load.cs" />
     <Compile Include="Assets\SimpleTouchController\Scripts\Animschar.cs" />
     <Compile Include="Assets\SimpleTouchController\Scripts\InfoTouches.cs" />
     <Compile Include="Assets\SimpleTouchController\Scripts\PlayerMoveController.cs" />
