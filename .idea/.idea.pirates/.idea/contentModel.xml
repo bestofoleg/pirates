@@ -40,16 +40,23 @@
         <e p="jump.cs" t="Include" />
         <e p="mainscripts" t="Include">
           <e p="animcam.cs" t="Include" />
+          <e p="Atack.cs" t="Include" />
           <e p="chcontrollvision.cs" t="Include" />
         </e>
         <e p="SimpleTouchController" t="Include">
           <e p="Readme.txt" t="Include" />
           <e p="Scripts" t="Include">
-            <e p="animators.cs" t="Include" />
+            <e p="Animschar.cs" t="Include" />
             <e p="InfoTouches.cs" t="Include" />
             <e p="PlayerMoveController.cs" t="Include" />
             <e p="SimpleTouchController.cs" t="Include" />
+            <e p="Sword.cs" t="Include" />
           </e>
+        </e>
+        <e p="Utils" t="Include">
+          <e p="BulkMessageWordUI.cs" t="Include" />
+          <e p="DoubleClickEvent.cs" t="Include" />
+          <e p="Dummy.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
