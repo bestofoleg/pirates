@@ -75,6 +75,7 @@
     <Compile Include="Assets\GameUI\CharacterUIController.cs" />
     <Compile Include="Assets\GUI Animator FREE\Scripts\Demo\Demo.cs" />
     <Compile Include="Assets\jump.cs" />
+    <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\mainscripts\animcam.cs" />
     <Compile Include="Assets\mainscripts\Atack.cs" />
     <Compile Include="Assets\mainscripts\chcontrollvision.cs" />
@@ -87,7 +88,9 @@
     <Compile Include="Assets\Utils\BulkMessageWordUI.cs" />
     <Compile Include="Assets\Utils\DoubleClickEvent.cs" />
     <Compile Include="Assets\Utils\Dummy.cs" />
+    <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\SimpleTouchController\README.txt" />
+    <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
     <None Include="Assets\Fantasy Skybox\Readme.txt" />
     <None Include="Assets\Fantasy Skybox\Readme\Readme.txt" />
     <None Include="Assets\GUI Animator FREE\Readme.txt" />

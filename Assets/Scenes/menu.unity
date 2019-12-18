@@ -4527,6 +4527,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 389857166}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f08de80b16ba23b44a1a88d6732992be, type: 2}
     - target: {fileID: 110556, guid: a1f656c69d2080948aa8bcd6456962b9, type: 3}
       propertyPath: m_Name
       value: SM_Env_Ocean_Tile_01
@@ -4587,10 +4591,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 9518862, guid: a1f656c69d2080948aa8bcd6456962b9, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f08de80b16ba23b44a1a88d6732992be, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1f656c69d2080948aa8bcd6456962b9, type: 3}
 --- !u!4 &1130902121 stripped
@@ -4831,6 +4831,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1127312382}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1266918816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266918815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6a6df342b52d24092cf6bbb590c535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveHeight: 0.2
+  waveFrequency: 0.2
+  waveLength: 0.2
+  waveOriginPosition: {x: 0, y: 0, z: 0}
 --- !u!111 &1266918819
 Animation:
   m_ObjectHideFlags: 0
@@ -7564,6 +7580,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: engchar
       objectReference: {fileID: 0}
+    - target: {fileID: 828012947, guid: 20127d3fd042d9840ab0057ef6d22bb8, type: 3}
+      propertyPath: mainchar
+      value: 
+      objectReference: {fileID: 447038301}
+    - target: {fileID: 828012947, guid: 20127d3fd042d9840ab0057ef6d22bb8, type: 3}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 1589178291}
     - target: {fileID: 3556198237216762429, guid: 20127d3fd042d9840ab0057ef6d22bb8,
         type: 3}
       propertyPath: damage
@@ -8123,14 +8147,6 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.5882353
       objectReference: {fileID: 0}
-    - target: {fileID: 828012947, guid: 20127d3fd042d9840ab0057ef6d22bb8, type: 3}
-      propertyPath: mainchar
-      value: 
-      objectReference: {fileID: 447038301}
-    - target: {fileID: 828012947, guid: 20127d3fd042d9840ab0057ef6d22bb8, type: 3}
-      propertyPath: sword
-      value: 
-      objectReference: {fileID: 1589178291}
     - target: {fileID: 1319024738, guid: 20127d3fd042d9840ab0057ef6d22bb8, type: 3}
       propertyPath: sword
       value: 
