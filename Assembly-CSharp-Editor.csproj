@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
+    <Compile Include="Assets\MagicMirror\Prefab\Editor\MagicMirrorEditor.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/pirates/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
