@@ -3,12 +3,14 @@ using UnityEngine.UI;
 
 public class Dummy : MonoBehaviour
 {
-    private const string DummyIsDeathMessage = "Dummy is death!";
+    public string dummyIsDeathMessage = "Dummy is death!";
+
+    public bool isBulkDamage;
     
     private int health;
 
     public BulkMessageWordUI damageQuantityTextUI;
-    
+
     public int maxHealth;
 
     private void Awake()
@@ -18,16 +20,35 @@ public class Dummy : MonoBehaviour
 
     public void Damage(int damage)
     {
+        if (isBulkDamage)
+        {
+            bulkDamage(damage);
+        }
+        
+        spendHealth(damage);
+    }
+
+    private void bulkDamage(int damage)
+    {
         BulkMessageWordUI damageQuantity = Instantiate(damageQuantityTextUI);
         damageQuantity.StartBulk(this.transform);
         if (health > 0)
         {
-            health -= damage;
             damageQuantity.text.text = damage.ToString();
         }
         else
         {
-            damageQuantity.text.text = DummyIsDeathMessage;
+            damageQuantity.text.text = dummyIsDeathMessage;
         }
     }
+
+    private void spendHealth(int damage)
+    {
+        if (health > 0)
+        {
+            health -= damage;
+        }
+    }
+
+    public int Health => health;
 }

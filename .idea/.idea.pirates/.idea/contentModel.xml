@@ -8,7 +8,12 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Character" t="Include">
+          <e p="CharacterParameters.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
+        </e>
+        <e p="Dynamic Flickering Light" t="Include">
+          <e p="FlickeringLight.cs" t="Include" />
+          <e p="Readme.txt" t="Include" />
         </e>
         <e p="Economy" t="Include">
           <e p="EconomyInteraction.cs" t="Include" />
@@ -53,6 +58,23 @@
             <e p="WaterShaded.shader" t="Include" />
           </e>
         </e>
+        <e p="MagicMirror" t="Include">
+          <e p="Demo" t="Include">
+            <e p="DemoScript.cs" t="Include" />
+          </e>
+          <e p="Prefab" t="Include">
+            <e p="Editor" t="Include">
+              <e p="MagicMirrorEditor.cs" t="Include" />
+            </e>
+            <e p="MirrorCameraScript.cs" t="Include" />
+            <e p="MirrorReflectionScript.cs" t="Include" />
+            <e p="MirrorScript.cs" t="Include" />
+            <e p="MirrorShader.shader" t="Include" />
+            <e p="MirrorShaderBumpMap.shader" t="Include" />
+            <e p="MirrorShaderOld.shader" t="Include" />
+            <e p="Readme.txt" t="Include" />
+          </e>
+        </e>
         <e p="mainscripts" t="Include">
           <e p="animcam.cs" t="Include" />
           <e p="Atack.cs" t="Include" />
@@ -71,6 +93,8 @@
         </e>
         <e p="Utils" t="Include">
           <e p="BulkMessageWordUI.cs" t="Include" />
+          <e p="CharacterParametersView.cs" t="Include" />
+          <e p="DamageTrigger.cs" t="Include" />
           <e p="DoubleClickEvent.cs" t="Include" />
           <e p="Dummy.cs" t="Include" />
         </e>

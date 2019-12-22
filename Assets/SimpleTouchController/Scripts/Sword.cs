@@ -6,11 +6,10 @@ using UnityEngine.UI;
 
 public class Sword : MonoBehaviour
 {
-    private const string EnemyTeg = "Enemy";
+    public string EnemyTeg = "Enemy";
     
     public int damage;
 
-    [Range(0, 1)]
     private float scale;
 
     public int RealDamage
