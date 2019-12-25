@@ -326,6 +326,9 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/2018.4.13f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="ArchimedsLab">
+      <HintPath>D:/pirates/Assets/FloatingEntities/Scripts/ArchimedsLab.dll</HintPath>
+    </Reference>
     <Reference Include="GETween">
       <HintPath>D:/pirates/Assets/GUI Animator FREE/Scripts/GETween.dll</HintPath>
     </Reference>
@@ -340,9 +343,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/pirates/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="ArchimedsLab">
-      <HintPath>D:/pirates/Assets/FloatingEntities/Scripts/ArchimedsLab.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/2018.4.13f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
