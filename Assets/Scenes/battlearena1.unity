@@ -815,7 +815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b086fdc6a7aaa114eb91006cf2431972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0.01, y: 0.17, z: 9.38}
+  offset: {x: 0, y: 0, z: -4.5}
 --- !u!114 &598501184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -828,8 +828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae8ef0545cd89264bb74ccf46f00d07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  centerOfMassOffset: {x: -0.12, y: 0.68, z: -9.76}
-  buoyancyMesh: {fileID: 0}
+  centerOfMassOffset: {x: 0, y: 0, z: -4.5}
+  buoyancyMesh: {fileID: 4300000, guid: 8dd6d1638da6f31428a66d394bc274f8, type: 3}
 --- !u!1001 &602387308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1198,7 +1198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.72
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
       propertyPath: m_LocalPosition.z

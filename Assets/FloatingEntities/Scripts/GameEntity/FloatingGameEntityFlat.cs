@@ -27,6 +27,13 @@ public class FloatingGameEntityFlat : GameEntity
         //Setting up the cache for the game. Here we use variables with a game-long lifetime.
         WaterCutter.CookCache(m, ref _triangles, ref worldBuffer, ref wetTris, ref dryTris);
     }
+    
+    private static float[] waveHeightes = new float []{1f, 5f, 2.5f};
+
+    private WaterSurface.GetWaterHeight myWaterHeight = delegate(Vector3 a)
+    {
+        return -waveHeightes[Random.Range(0, 3)];
+    };
 
     protected override void FixedUpdate()
     {
@@ -44,7 +51,7 @@ public class FloatingGameEntityFlat : GameEntity
             Here I use a very simple water model, already implemented in the DLL.
             You can give your own. See the example in Examples/CustomWater.
         */
-        WaterCutter.SplitMesh(worldBuffer, ref wetTris, ref dryTris, out nbrWet, out nbrDry, WaterSurface.flatWater);
+        WaterCutter.SplitMesh(worldBuffer, ref wetTris, ref dryTris, out nbrWet, out nbrDry, myWaterHeight);
         //This function will compute the forces depending on the triangles generated before.
         Archimeds.ComputeAllForces(wetTris, dryTris, nbrWet, nbrDry, speed, rb);
     }

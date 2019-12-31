@@ -32,6 +32,30 @@
             <e p="FSPlayer.cs" t="Include" />
           </e>
         </e>
+        <e p="FloatingEntities" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="BoatController.cs" t="Include" />
+            <e p="GameEntity" t="Include">
+              <e p="FloatingGameEntityFlat.cs" t="Include" />
+              <e p="FloatingGameEntityRealist.cs" t="Include" />
+              <e p="FloatingGameEntityStorm.cs" t="Include" />
+              <e p="GameEntity.cs" t="Include" />
+            </e>
+            <e p="OceanAdvanced.cs" t="Include" />
+            <e p="Orbital.cs" t="Include" />
+            <e p="PropellerBoats.cs" t="Include" />
+            <e p="SplashGenerator.cs" t="Include" />
+            <e p="Tools" t="Include">
+              <e p="Proxies.cs" t="Include" />
+            </e>
+            <e p="WakeGenerator.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Ocean.shader" t="Include" />
+            <e p="OceanAdvanced.shader" t="Include" />
+            <e p="WaterToolBox.cginc" t="Include" />
+          </e>
+        </e>
         <e p="GameUI" t="Include">
           <e p="CharacterUIController.cs" t="Include" />
         </e>
@@ -56,23 +80,6 @@
           </e>
           <e p="Shaders" t="Include">
             <e p="WaterShaded.shader" t="Include" />
-          </e>
-        </e>
-        <e p="MagicMirror" t="Include">
-          <e p="Demo" t="Include">
-            <e p="DemoScript.cs" t="Include" />
-          </e>
-          <e p="Prefab" t="Include">
-            <e p="Editor" t="Include">
-              <e p="MagicMirrorEditor.cs" t="Include" />
-            </e>
-            <e p="MirrorCameraScript.cs" t="Include" />
-            <e p="MirrorReflectionScript.cs" t="Include" />
-            <e p="MirrorScript.cs" t="Include" />
-            <e p="MirrorShader.shader" t="Include" />
-            <e p="MirrorShaderBumpMap.shader" t="Include" />
-            <e p="MirrorShaderOld.shader" t="Include" />
-            <e p="Readme.txt" t="Include" />
           </e>
         </e>
         <e p="mainscripts" t="Include">
