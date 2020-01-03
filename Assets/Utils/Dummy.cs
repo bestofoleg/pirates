@@ -7,7 +7,7 @@ public class Dummy : MonoBehaviour
 
     public bool isBulkDamage;
     
-    private int health;
+    public int health;
 
     public BulkMessageWordUI damageQuantityTextUI;
 
