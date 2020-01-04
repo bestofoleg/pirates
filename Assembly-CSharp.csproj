@@ -66,71 +66,73 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Character\CharacterParameters.cs" />
-    <Compile Include="Assets\Character\Inventory.cs" />
-    <Compile Include="Assets\Dynamic Flickering Light\FlickeringLight.cs" />
-    <Compile Include="Assets\Economy\EconomyInteraction.cs" />
-    <Compile Include="Assets\Economy\InteractionType.cs" />
-    <Compile Include="Assets\Economy\UI\GoldView.cs" />
     <Compile Include="Assets\Fantasy Skybox\Scripts\FantasySkyboxUIController.cs" />
     <Compile Include="Assets\Fantasy Skybox\Scripts\FSPlayer.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\BoatController.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\GameEntity\FloatingGameEntityFlat.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\GameEntity\FloatingGameEntityRealist.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\GameEntity\FloatingGameEntityStorm.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\GameEntity\GameEntity.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\OceanAdvanced.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\Orbital.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\PropellerBoats.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\SplashGenerator.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\Tools\Proxies.cs" />
-    <Compile Include="Assets\FloatingEntities\Scripts\WakeGenerator.cs" />
-    <Compile Include="Assets\GameUI\CharacterUIController.cs" />
     <Compile Include="Assets\GUI Animator FREE\Scripts\Demo\Demo.cs" />
-    <Compile Include="Assets\jump.cs" />
-    <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\main models\Character\CharacterParameters.cs" />
+    <Compile Include="Assets\main models\Character\Inventory.cs" />
+    <Compile Include="Assets\main models\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\mainscripts\animcam.cs" />
     <Compile Include="Assets\mainscripts\Atack.cs" />
+    <Compile Include="Assets\mainscripts\Cave_door.cs" />
+    <Compile Include="Assets\mainscripts\cave_doortrig.cs" />
     <Compile Include="Assets\mainscripts\chcontrollvision.cs" />
+    <Compile Include="Assets\mainscripts\Dynamic Flickering Light\FlickeringLight.cs" />
+    <Compile Include="Assets\mainscripts\Economy\EconomyInteraction.cs" />
+    <Compile Include="Assets\mainscripts\Economy\InteractionType.cs" />
+    <Compile Include="Assets\mainscripts\Economy\UI\GoldView.cs" />
     <Compile Include="Assets\mainscripts\enemydie.cs" />
     <Compile Include="Assets\mainscripts\Enemysc.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\BoatController.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\GameEntity\FloatingGameEntityFlat.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\GameEntity\FloatingGameEntityRealist.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\GameEntity\FloatingGameEntityStorm.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\GameEntity\GameEntity.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\OceanAdvanced.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\Orbital.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\PropellerBoats.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\SplashGenerator.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\Tools\Proxies.cs" />
+    <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\WakeGenerator.cs" />
+    <Compile Include="Assets\mainscripts\GameUI\CharacterUIController.cs" />
+    <Compile Include="Assets\mainscripts\jump.cs" />
     <Compile Include="Assets\mainscripts\load.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets\mainscripts\Utils\BulkMessageWordUI.cs" />
+    <Compile Include="Assets\mainscripts\Utils\CharacterParametersView.cs" />
+    <Compile Include="Assets\mainscripts\Utils\DamageTrigger.cs" />
+    <Compile Include="Assets\mainscripts\Utils\DoubleClickEvent.cs" />
+    <Compile Include="Assets\mainscripts\Utils\Dummy.cs" />
     <Compile Include="Assets\SimpleTouchController\Scripts\Animschar.cs" />
     <Compile Include="Assets\SimpleTouchController\Scripts\InfoTouches.cs" />
     <Compile Include="Assets\SimpleTouchController\Scripts\PlayerMoveController.cs" />
     <Compile Include="Assets\SimpleTouchController\Scripts\SimpleTouchController.cs" />
     <Compile Include="Assets\SimpleTouchController\Scripts\Sword.cs" />
-    <Compile Include="Assets\Utils\BulkMessageWordUI.cs" />
-    <Compile Include="Assets\Utils\CharacterParametersView.cs" />
-    <Compile Include="Assets\Utils\DamageTrigger.cs" />
-    <Compile Include="Assets\Utils\DoubleClickEvent.cs" />
-    <Compile Include="Assets\Utils\Dummy.cs" />
-    <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
+    <None Include="Assets\main models\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\SimpleTouchController\README.txt" />
-    <None Include="Assets\Dynamic Flickering Light\readme.txt" />
-    <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
-    <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
-    <None Include="Assets\FloatingEntities\Shaders\OceanAdvanced.shader" />
-    <None Include="Assets\FloatingEntities\Shaders\WaterToolBox.cginc" />
-    <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
-    <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
-    <None Include="Assets\FloatingEntities\Shaders\Ocean.shader" />
+    <None Include="Assets\mainscripts\Dynamic Flickering Light\readme.txt" />
+    <None Include="Assets\mainscripts\Photon\PhotonLibs\changes-library.txt" />
+    <None Include="Assets\mainscripts\Photon\PhotonUnityNetworking\link.xml" />
+    <None Include="Assets\mainscripts\FloatingEntities\Shaders\OceanAdvanced.shader" />
+    <None Include="Assets\mainscripts\FloatingEntities\Shaders\WaterToolBox.cginc" />
+    <None Include="Assets\mainscripts\Photon\PhotonLibs\Photon3Unity3D.xml" />
+    <None Include="Assets\main models\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
+    <None Include="Assets\mainscripts\FloatingEntities\Shaders\Ocean.shader" />
     <None Include="Assets\Fantasy Skybox\Readme.txt" />
     <None Include="Assets\Fantasy Skybox\Readme\Readme.txt" />
     <None Include="Assets\GUI Animator FREE\Readme.txt" />
-    <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
-    <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
+    <None Include="Assets\mainscripts\Photon\PhotonUnityNetworking\readme.txt" />
+    <None Include="Assets\mainscripts\Photon\PhotonUnityNetworking\changelog.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/pirates/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -344,14 +346,20 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/2018.4.13f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="ArchimedsLab">
-      <HintPath>D:/pirates/Assets/FloatingEntities/Scripts/ArchimedsLab.dll</HintPath>
-    </Reference>
     <Reference Include="GETween">
       <HintPath>D:/pirates/Assets/GUI Animator FREE/Scripts/GETween.dll</HintPath>
     </Reference>
     <Reference Include="GUIAnimatorFREE">
       <HintPath>D:/pirates/Assets/GUI Animator FREE/Scripts/GUIAnimatorFREE.dll</HintPath>
+    </Reference>
+    <Reference Include="ArchimedsLab">
+      <HintPath>D:/pirates/Assets/mainscripts/FloatingEntities/Scripts/ArchimedsLab.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>D:/pirates/Assets/mainscripts/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>D:/pirates/Assets/mainscripts/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/pirates/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
@@ -361,12 +369,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/pirates/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-      <HintPath>D:/pirates/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>D:/pirates/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/2018.4.13f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

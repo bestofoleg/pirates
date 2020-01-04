@@ -66,23 +66,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\AppSettings.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\ConnectionHandler.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\Extensions.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\FriendInfo.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadBalancingClient.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadbalancingPeer.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\PhotonPing.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\PhotonPingClasses.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\Player.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\Region.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\RegionHandler.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\Room.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\RoomInfo.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\SupportLogger.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\WebRpc.cs" />
-    <None Include="Assets\Photon\PhotonRealtime\Code\changes-realtime.txt" />
-    <None Include="Assets\Photon\PhotonRealtime\Code\PhotonRealtime.asmdef" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\AppSettings.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\ConnectionHandler.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\Extensions.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\FriendInfo.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\LoadBalancingClient.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\LoadbalancingPeer.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\PhotonPing.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\PhotonPingClasses.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\Player.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\Region.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\RegionHandler.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\Room.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\RoomInfo.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\SupportLogger.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Code\WebRpc.cs" />
+    <None Include="Assets\mainscripts\Photon\PhotonRealtime\Code\changes-realtime.txt" />
+    <None Include="Assets\mainscripts\Photon\PhotonRealtime\Code\PhotonRealtime.asmdef" />
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/2018.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -317,14 +317,20 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="ArchimedsLab">
-      <HintPath>D:/pirates/Assets/FloatingEntities/Scripts/ArchimedsLab.dll</HintPath>
-    </Reference>
     <Reference Include="GETween">
       <HintPath>D:/pirates/Assets/GUI Animator FREE/Scripts/GETween.dll</HintPath>
     </Reference>
     <Reference Include="GUIAnimatorFREE">
       <HintPath>D:/pirates/Assets/GUI Animator FREE/Scripts/GUIAnimatorFREE.dll</HintPath>
+    </Reference>
+    <Reference Include="ArchimedsLab">
+      <HintPath>D:/pirates/Assets/mainscripts/FloatingEntities/Scripts/ArchimedsLab.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>D:/pirates/Assets/mainscripts/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>D:/pirates/Assets/mainscripts/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
       <HintPath>D:/pirates/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
@@ -343,12 +349,6 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/pirates/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-      <HintPath>D:/pirates/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>D:/pirates/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/2018.4.13f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

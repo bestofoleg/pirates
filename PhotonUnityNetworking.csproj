@@ -66,21 +66,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\CustomTypes.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Enums.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonHandler.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonNetwork.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonNetworkPart.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonStreamQueue.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonView.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PunClasses.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\ServerSettings.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonAnimatorView.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonRigidbody2DView.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonRigidbodyView.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformView.cs" />
-    <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformViewClassic.cs" />
-    <None Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonUnityNetworking.asmdef" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\CustomTypes.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\Enums.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\PhotonHandler.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\PhotonNetwork.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\PhotonNetworkPart.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\PhotonStreamQueue.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\PhotonView.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\PunClasses.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\ServerSettings.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\Views\PhotonAnimatorView.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\Views\PhotonRigidbody2DView.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\Views\PhotonRigidbodyView.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformView.cs" />
+    <Compile Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformViewClassic.cs" />
+    <None Include="Assets\mainscripts\Photon\PhotonUnityNetworking\Code\PhotonUnityNetworking.asmdef" />
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/2018.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -315,14 +315,20 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="ArchimedsLab">
-      <HintPath>D:/pirates/Assets/FloatingEntities/Scripts/ArchimedsLab.dll</HintPath>
-    </Reference>
     <Reference Include="GETween">
       <HintPath>D:/pirates/Assets/GUI Animator FREE/Scripts/GETween.dll</HintPath>
     </Reference>
     <Reference Include="GUIAnimatorFREE">
       <HintPath>D:/pirates/Assets/GUI Animator FREE/Scripts/GUIAnimatorFREE.dll</HintPath>
+    </Reference>
+    <Reference Include="ArchimedsLab">
+      <HintPath>D:/pirates/Assets/mainscripts/FloatingEntities/Scripts/ArchimedsLab.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>D:/pirates/Assets/mainscripts/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>D:/pirates/Assets/mainscripts/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
       <HintPath>D:/pirates/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
@@ -341,12 +347,6 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/pirates/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-      <HintPath>D:/pirates/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>D:/pirates/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/2018.4.13f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
