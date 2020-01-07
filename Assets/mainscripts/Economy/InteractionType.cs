@@ -1,5 +1,6 @@
 ﻿public enum InteractionType
 {
     FISHMAN,
-    GUNMAN
+    GUNMAN,
+    CAVEGIRL
 }

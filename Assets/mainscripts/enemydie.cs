@@ -30,7 +30,7 @@ public class enemydie : MonoBehaviour
             enm.enabled = false;
             for (int i = 0; i < mainc.Count; i++)
             {
-
+                
                 mainc[i].isTrigger = true;
             }
             for (int i = 0; i < ragdoll.Count; i++)

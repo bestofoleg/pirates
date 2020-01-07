@@ -9,8 +9,10 @@ public class CharacterUIController : MonoBehaviour
     public GameObject fishmanInteractionMenu;
 
     public GameObject gunmanInteractionMenu;
-    
 
+    public GameObject cavegirlmenuact;
+
+    public GameObject Mission;
     private void Awake()
     {
         GameObject player = GameObject.FindWithTag("Player");
@@ -26,6 +28,7 @@ public class CharacterUIController : MonoBehaviour
     public void addMoney(int quantity)
     {
         _inventory.goldQuantity += quantity;
+
     }
 
     public int getMoneyValue()
@@ -41,9 +44,29 @@ public class CharacterUIController : MonoBehaviour
     public void activateGunmanMenu(bool isActive)
     {
         gunmanInteractionMenu.SetActive(isActive);
-       
 
-    } 
+
+    }
+    public void activeCaveGirlMenu(bool isActive)
+    {
+
+        cavegirlmenuact.SetActive(isActive);
+
+
+    }
+    public void activeMissionMenu(bool isActive)
+    {
+
+        cavegirlmenuact.SetActive(false);
+        Mission.SetActive(isActive);
+
+
+    }
+
+
+
+
+
 
 
 }

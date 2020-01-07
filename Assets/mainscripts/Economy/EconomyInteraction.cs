@@ -39,7 +39,9 @@ public class EconomyInteraction : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag.Equals(playerTag))
-        {   
+        {
+            _controller.activeCaveGirlMenu(InteractionType.CAVEGIRL.Equals(interactionType));
+
             _controller.activateFishmanMenu(InteractionType.FISHMAN.Equals(interactionType));
             _controller.activateGunmanMenu(InteractionType.GUNMAN.Equals(interactionType));
             
@@ -63,6 +65,10 @@ public class EconomyInteraction : MonoBehaviour
                 gunmannomoney.SetActive(false);
                 _controller.activateGunmanMenu(false);
             }
+            if (InteractionType.CAVEGIRL.Equals(interactionType))
+            {
+                _controller.activeCaveGirlMenu(false);
+            }
         }
     }
     public void OnTriggerStay (Collider other)
@@ -71,6 +77,7 @@ public class EconomyInteraction : MonoBehaviour
 
         if (other.tag.Equals(playerTag))
         {
+            _controller.activeCaveGirlMenu(InteractionType.CAVEGIRL.Equals(interactionType));
             if (InteractionType.GUNMAN.Equals(interactionType)) { 
             
             if (money.goldQuantity < 500)
