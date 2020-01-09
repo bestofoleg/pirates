@@ -13,11 +13,33 @@ public class CharacterUIController : MonoBehaviour
     public GameObject cavegirlmenuact;
 
     public GameObject Mission;
+
+    public GameObject attackView;
+
+    public GameObject attackMedView;
+
+    public GameObject moveView;
+
+    public GameObject rotateJoystick;
+
+    public GameObject shipApproveMenuControl;
+
+    private ShipUIController _shipUIController;
     private void Awake()
     {
         GameObject player = GameObject.FindWithTag("Player");
         _inventory = player.GetComponent<Inventory>();
+    }
 
+    public void setShipUIController(ShipUIController shipUIController)
+    {
+        _shipUIController = shipUIController;
+    }
+
+    public void approveShipControl(bool mode)
+    {
+        _shipUIController.setShipControlMode(mode);
+        shipApproveMenuControl.SetActive(false);
     }
 
     public void spendMoney(int quantity)
