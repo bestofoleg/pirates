@@ -53,6 +53,16 @@ ModelImporter:
     4300014: SM_Veh_Boat_Large_Front_SailUp_01
     4300016: SM_Veh_Boat_Large_Mast_SailUp_01
     4300018: SM_Veh_Boat_Large_Mast_SailUp_02
+    6400000: SM_Veh_Boat_Large_Front_SailRigging_01
+    6400002: SM_Veh_Boat_Large_Front_SailUp_01
+    6400004: SM_Veh_Boat_Large_Mast_01
+    6400006: SM_Veh_Boat_Large_Mast_SailUp_01
+    6400008: SM_Veh_Boat_Large_Mast_SailUp_02
+    6400010: SM_Veh_Boat_Large_Sails_01
+    6400012: SM_Veh_Boat_Large_Sails_02
+    6400014: SM_Veh_Boat_Large_Sails_03
+    6400016: //RootNode
+    6400018: SMVeh__Boat_Large_Mast_02
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -87,7 +97,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 100
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 0
     importBlendShapes: 0
