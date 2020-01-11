@@ -2,5 +2,6 @@
 {
     FISHMAN,
     GUNMAN,
-    CAVEGIRL
+    CAVEGIRL,
+    BATTLEMAP
 }

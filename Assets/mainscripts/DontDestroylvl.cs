@@ -5,22 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class DontDestroylvl : MonoBehaviour
 {
+    load lol;
 
     public int lvl;
     
     void Start()
     {  
-    DontDestroyOnLoad(this.gameObject);
+   
     }
     public void SceneIDcave()
     {
-        lvl = 2;
-        SceneManager.LoadScene("load");
         
+        DontDestroyOnLoad(this.gameObject);
+        lvl = 2;
+        SceneManager.LoadScene(2);
+       
 
     }
 
+    public void scenebattle()
+    {
 
+        DontDestroyOnLoad(this.gameObject);
+        lvl = 3;
+        SceneManager.LoadScene(3);
+
+
+    }
 
 
     // Update is called once per frame

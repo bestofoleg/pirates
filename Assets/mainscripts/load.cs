@@ -6,12 +6,12 @@ using UnityEngine;
 
 public class load : MonoBehaviour
 {
-    public DontDestroylvl lvls;
+   
     public int sceneID;
     public Image loadIMG;
     void Start()
     {
-        sceneID = lvls.lvl;
+       
         StartCoroutine(AsyncLoad());
     }
 

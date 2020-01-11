@@ -1,4 +1,7 @@
 ﻿using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
 public class CharacterUIController : MonoBehaviour
 {
@@ -25,6 +28,7 @@ public class CharacterUIController : MonoBehaviour
     public GameObject shipApproveMenuControl;
 
     private ShipUIController _shipUIController;
+    public GameObject sail;
     private void Awake()
     {
         GameObject player = GameObject.FindWithTag("Player");
@@ -38,6 +42,7 @@ public class CharacterUIController : MonoBehaviour
 
     public void approveShipControl(bool mode)
     {
+        sail.SetActive(true);
         _shipUIController.setShipControlMode(mode);
         shipApproveMenuControl.SetActive(false);
     }

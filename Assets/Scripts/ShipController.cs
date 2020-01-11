@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ShipController : MonoBehaviour
 {
+    public int forwardspeedsail;
     public float moveSpeed;
 
     public float rotateSpeed;
@@ -17,9 +18,25 @@ public class ShipController : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (forwardspeedsail == 1)
         {
             shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime);
+        }
+        if (forwardspeedsail == 2)
+        {
+            shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * 2 * Time.deltaTime);
+        }
+        if (forwardspeedsail == 0)
+        {
+            shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * 0 * Time.deltaTime);
+        }
+        if (forwardspeedsail < 0)
+        {
+            forwardspeedsail = 0;
+        }
+        if (forwardspeedsail > 2)
+        {
+            forwardspeedsail = 2;
         }
     }
 

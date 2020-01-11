@@ -6,7 +6,7 @@ using UnityEngine;
 public class ShipUIController : MonoBehaviour
 {
     public string playerTag = "Player";
-    
+
     public string characterUITag = "character_ui";
 
     public string animationName = "Stayroot";
@@ -26,6 +26,7 @@ public class ShipUIController : MonoBehaviour
     public ShipController shipController;
 
     private GameObject shipControlApproveMenu;
+  
     
     private void Awake()
     {
@@ -38,8 +39,9 @@ public class ShipUIController : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
+        
         if (playerTag.Equals(collider.gameObject.tag))
-        {
+        {   
             characterUiController.setShipUIController(this);
             characterUiController.shipApproveMenuControl.SetActive(true);
         }
