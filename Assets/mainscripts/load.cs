@@ -6,47 +6,22 @@ using UnityEngine;
 
 public class load : MonoBehaviour
 {
-   
-    public int sceneID;
+    public static int sceneID;
     public Image loadIMG;
+
     void Start()
     {
-       
         StartCoroutine(AsyncLoad());
     }
 
-    void Update ()
-    {
-        
-    }
     IEnumerator AsyncLoad()
     {
-       
-     
         AsyncOperation loading = SceneManager.LoadSceneAsync(sceneID);
-       if (sceneID <= 0)
+        while (!loading.isDone)
         {
-            sceneID = 1;
+            float prog = loading.progress / 0.9f;
+            loadIMG.fillAmount = loading.progress;
+            yield return null;
         }
-        if (sceneID == 1)
-
-
-        {
-            while (!loading.isDone)
-
-            {
-                float prog = loading.progress / 0.9f;
-                loadIMG.fillAmount = loading.progress;
-                yield return null;
-
-            }
-        }
-            if (sceneID == 2)
-            {
-                float prog = loading.progress / 0.9f;
-                loadIMG.fillAmount = loading.progress;
-                yield return null;
-            }
-        
     }
 }

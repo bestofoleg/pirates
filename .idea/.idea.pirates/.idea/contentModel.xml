@@ -48,10 +48,10 @@
         <e p="mainscripts" t="Include">
           <e p="animcam.cs" t="Include" />
           <e p="Atack.cs" t="Include" />
+          <e p="Atacktrigger.cs" t="Include" />
           <e p="Cave_door.cs" t="Include" />
           <e p="cave_doortrig.cs" t="Include" />
           <e p="chcontrollvision.cs" t="Include" />
-          <e p="DontDestroylvl.cs" t="Include" />
           <e p="Dynamic Flickering Light" t="Include">
             <e p="FlickeringLight.cs" t="Include" />
             <e p="Readme.txt" t="Include" />
@@ -67,7 +67,6 @@
           <e p="Enemysc.cs" t="Include" />
           <e p="FloatingEntities" t="Include">
             <e p="Scripts" t="Include">
-              <e p="BoatController.cs" t="Include" />
               <e p="GameEntity" t="Include">
                 <e p="FloatingGameEntityFlat.cs" t="Include" />
                 <e p="FloatingGameEntityRealist.cs" t="Include" />
@@ -76,7 +75,6 @@
               </e>
               <e p="OceanAdvanced.cs" t="Include" />
               <e p="Orbital.cs" t="Include" />
-              <e p="PropellerBoats.cs" t="Include" />
               <e p="SplashGenerator.cs" t="Include" />
               <e p="Tools" t="Include">
                 <e p="Proxies.cs" t="Include" />
@@ -92,6 +90,7 @@
           <e p="GameUI" t="Include">
             <e p="CharacterUIController.cs" t="Include" />
           </e>
+          <e p="HpPlayer.cs" t="Include" />
           <e p="jump.cs" t="Include" />
           <e p="load.cs" t="Include" />
           <e p="Offallscrean.cs" t="Include" />
@@ -439,6 +438,8 @@
               </e>
             </e>
           </e>
+          <e p="sailsc.cs" t="Include" />
+          <e p="ScenesLoader.cs" t="Include" />
           <e p="scroolMmenu.cs" t="Include" />
           <e p="Utils" t="Include">
             <e p="BulkMessageWordUI.cs" t="Include" />

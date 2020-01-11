@@ -69,7 +69,6 @@
     <Compile Include="Assets\mainscripts\Cave_door.cs" />
     <Compile Include="Assets\mainscripts\cave_doortrig.cs" />
     <Compile Include="Assets\mainscripts\chcontrollvision.cs" />
-    <Compile Include="Assets\mainscripts\DontDestroylvl.cs" />
     <Compile Include="Assets\mainscripts\Dynamic Flickering Light\FlickeringLight.cs" />
     <Compile Include="Assets\mainscripts\Economy\EconomyInteraction.cs" />
     <Compile Include="Assets\mainscripts\Economy\InteractionType.cs" />
@@ -102,6 +101,7 @@
     <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
     <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\mainscripts\sailsc.cs" />
+    <Compile Include="Assets\mainscripts\ScenesLoader.cs" />
     <Compile Include="Assets\mainscripts\scroolMmenu.cs" />
     <Compile Include="Assets\mainscripts\Utils\BulkMessageWordUI.cs" />
     <Compile Include="Assets\mainscripts\Utils\CharacterParametersView.cs" />
