@@ -8,12 +8,12 @@ public class HpPlayer : MonoBehaviour
     public float hp;
     void Start()
     {
-        
+        hp = 1;
     }
 
    
     void Update()
-    {
+    { 
         hpp.fillAmount = hp;
     }
 }

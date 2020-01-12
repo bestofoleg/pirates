@@ -8,6 +8,7 @@ public class Enemysc : MonoBehaviour
     GameObject Player;
    public NavMeshAgent mesh;
     public GameObject Enemy;
+    public HpPlayer hpplayer;
     void Start()
     {
         mesh = GetComponent<NavMeshAgent>();
@@ -30,7 +31,15 @@ public class Enemysc : MonoBehaviour
 
 
     }
-    
+    public void DamageOnPlayer(Collider other)
+    {
+       
+            hpplayer.hp -= 0.1f;
+      
+
+    }
+
+
     void Update()
     {
         mesh.SetDestination(Player.transform.position);

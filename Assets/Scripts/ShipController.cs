@@ -22,9 +22,9 @@ public class ShipController : MonoBehaviour
         {
             shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime);
         }
-        if (forwardspeedsail == 2)
+        if (forwardspeedsail >= 2)
         {
-            shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * 2 * Time.deltaTime);
+            shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime * 2);
         }
         if (forwardspeedsail == 0)
         {

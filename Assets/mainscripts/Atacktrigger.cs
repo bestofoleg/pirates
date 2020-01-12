@@ -14,7 +14,7 @@ public class Atacktrigger : MonoBehaviour
 
   public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy") {
+        if (other.tag == "Player") {
             enem.anim.SetBool("enemys", false);
             enem.anim.SetBool("enemesidle", true);
             Debug.Log("he enter");
@@ -23,7 +23,7 @@ public class Atacktrigger : MonoBehaviour
     }
     public void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == "Player")
         {
             enem.anim.SetBool("enemys", true);
 
