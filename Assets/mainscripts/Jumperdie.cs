@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemydie : MonoBehaviour
+public class Jumperdie : MonoBehaviour
 {
-  public  int room1;
-    public Enemysc enm;
+    public Jumper enm;
     public GameObject l, l1;
     public Dummy HP;
     private int HPh;
@@ -14,12 +13,7 @@ public class enemydie : MonoBehaviour
     public List<Rigidbody> rig;
     void Start()
     {
-        room1 = 0;
-        if (HPh <= 0)
-        {
-            room1 += 1;
-            room1 = room1;
-        }
+       
     }
 
     // Update is called once per frame
@@ -37,7 +31,6 @@ public class enemydie : MonoBehaviour
         HPh = HP.health;
         if (HPh <= 0)
         {
-            
             l.SetActive(false);
             l1.SetActive(false);
             enm.anim.enabled = false;

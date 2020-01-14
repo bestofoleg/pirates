@@ -8,6 +8,6 @@ public class ScenesLoader : MonoBehaviour
 	public void LoadScene(int sceneNumber)
 	{
 		load.sceneID = sceneNumber;
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene(2);
 	}
 }

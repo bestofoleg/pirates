@@ -1,0 +1,36 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Atacktriggerjumper : MonoBehaviour
+{
+ public Jumper enem;
+        
+    void Start()
+    {
+        
+    }
+
+
+  public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player") {
+            enem.anim.SetBool("enemys", false);
+            enem.anim.SetBool("enemesidle", true);
+            Debug.Log("he enter");
+        }
+
+    }
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            enem.anim.SetBool("enemys", true);
+
+            enem.anim.SetBool("enemesidle", false);
+            Debug.Log("he exit");
+        }
+    }
+   
+    }
+

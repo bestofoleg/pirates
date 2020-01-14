@@ -4,14 +4,14 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class load : MonoBehaviour
+public class Lmm : MonoBehaviour
 {
-    public static int sceneID;
+    public int sceneID;
     public Image loadIMG;
 
     void Start()
     {
-        
+
         StartCoroutine(AsyncLoad());
     }
 

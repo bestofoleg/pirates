@@ -69,12 +69,14 @@
     <Compile Include="Assets\Fantasy Skybox\Scripts\FantasySkyboxUIController.cs" />
     <Compile Include="Assets\Fantasy Skybox\Scripts\FSPlayer.cs" />
     <Compile Include="Assets\GUI Animator FREE\Scripts\Demo\Demo.cs" />
+    <Compile Include="Assets\Lmm.cs" />
     <Compile Include="Assets\main models\Character\CharacterParameters.cs" />
     <Compile Include="Assets\main models\Character\Inventory.cs" />
     <Compile Include="Assets\main models\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\mainscripts\animcam.cs" />
     <Compile Include="Assets\mainscripts\Atack.cs" />
     <Compile Include="Assets\mainscripts\Atacktrigger.cs" />
+    <Compile Include="Assets\mainscripts\Atacktriggerjumper.cs" />
     <Compile Include="Assets\mainscripts\Cave_door.cs" />
     <Compile Include="Assets\mainscripts\cave_doortrig.cs" />
     <Compile Include="Assets\mainscripts\chcontrollvision.cs" />
@@ -96,6 +98,10 @@
     <Compile Include="Assets\mainscripts\GameUI\CharacterUIController.cs" />
     <Compile Include="Assets\mainscripts\HpPlayer.cs" />
     <Compile Include="Assets\mainscripts\jump.cs" />
+    <Compile Include="Assets\mainscripts\Jumper.cs" />
+    <Compile Include="Assets\mainscripts\Jumper_gravityskl.cs" />
+    <Compile Include="Assets\mainscripts\Jumperdie.cs" />
+    <Compile Include="Assets\mainscripts\LloadMM.cs" />
     <Compile Include="Assets\mainscripts\load.cs" />
     <Compile Include="Assets\mainscripts\Offallscrean.cs" />
     <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
@@ -109,6 +115,7 @@
     <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets\mainscripts\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
     <Compile Include="Assets\mainscripts\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets\mainscripts\Pushatack.cs" />
     <Compile Include="Assets\mainscripts\sailsc.cs" />
     <Compile Include="Assets\mainscripts\ScenesLoader.cs" />
     <Compile Include="Assets\mainscripts\scroolMmenu.cs" />
