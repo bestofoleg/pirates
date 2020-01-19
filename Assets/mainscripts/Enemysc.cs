@@ -16,6 +16,8 @@ public class Enemysc : MonoBehaviour
         anim = GetComponent<Animator>();
         Player = GameObject.FindWithTag("Player");
         anim.SetBool("enemys", false);
+        hpplayer = GetComponent<HpPlayer>();
+        hpplayer = HpPlayer.FindObjectOfType<HpPlayer>();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -41,7 +43,9 @@ public class Enemysc : MonoBehaviour
 
 
     void Update()
-    {
+    { if(!Player) {
+            hpplayer = HpPlayer.FindObjectOfType<HpPlayer>();
+            Player = GameObject.FindWithTag("Player"); }
         mesh.SetDestination(Player.transform.position);
     }
     

@@ -7,7 +7,7 @@ public class ShipController : MonoBehaviour
 {
     public int forwardspeedsail;
     public float moveSpeed;
-
+   public Animator anim;
     public float rotateSpeed;
 
     public Rigidbody shipRigidbody;
@@ -17,6 +17,16 @@ public class ShipController : MonoBehaviour
     public Transform targetPoint;
     
     private void FixedUpdate()
+    {
+        anim = GetComponent<Animator>();
+    }
+   
+    public void rotateShip(float scale)
+    {
+        transform.Rotate(Vector3.up * scale * rotateSpeed * Time.deltaTime);
+    }
+
+    private void Update()
     {
         if (forwardspeedsail == 1)
         {
@@ -30,6 +40,7 @@ public class ShipController : MonoBehaviour
         {
             shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * 0 * Time.deltaTime);
         }
+
         if (forwardspeedsail < 0)
         {
             forwardspeedsail = 0;
@@ -38,15 +49,6 @@ public class ShipController : MonoBehaviour
         {
             forwardspeedsail = 2;
         }
-    }
-
-    public void rotateShip(float scale)
-    {
-        transform.Rotate(Vector3.up * scale * rotateSpeed * Time.deltaTime);
-    }
-
-    private void Update()
-    {
         characterTransform.position = targetPoint.position;
         characterTransform.rotation = transform.rotation;
     }

@@ -12,7 +12,7 @@ public class RudderController : MonoBehaviour, IDragHandler
             shipController.enabled = false;
         }
         else
-        {
+        {   
             shipController.enabled = true;
             transform.localRotation = Quaternion.Euler(
 
@@ -21,6 +21,8 @@ public class RudderController : MonoBehaviour, IDragHandler
                     -(eventData.position.x / Screen.width) * 360
                 );
             shipController.rotateShip(eventData.delta.x);
+            
+
         }
     }
 }

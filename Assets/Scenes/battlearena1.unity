@@ -7,7 +7,7 @@ OcclusionCullingSettings:
   m_OcclusionBakeSettings:
     smallestOccluder: 5
     smallestHole: 0.25
-    backfaceThreshold: 100
+    backfaceThreshold: 29.5
   m_SceneGUID: 00000000000000000000000000000000
   m_OcclusionCullingData: {fileID: 0}
 --- !u!104 &2
@@ -735,8 +735,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.094046, y: 3.210176, z: 0.1246118}
-  m_Center: {x: -0.14448571, y: 0.9198358, z: 2.7690905e-16}
+  m_Size: {x: 4.7017884, y: 3.210176, z: 1.0993067}
+  m_Center: {x: 0.087157965, y: 0.9198358, z: 0.05304289}
 --- !u!114 &352288928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,12 +1117,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7411765}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 43d8f6214a89d46e3aa87179ac56b554, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a7aa2e1a0b3b1734c8c7b29a3dd20c2e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1556,6 +1556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardspeedsail: 0
   moveSpeed: 7
+  anim: {fileID: 0}
   rotateSpeed: 0.3
   shipRigidbody: {fileID: 598501178}
   characterTransform: {fileID: 1481050183}
@@ -2186,12 +2187,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6132076, g: 0.3499911, b: 0.47983855, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7372549}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 43d8f6214a89d46e3aa87179ac56b554, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2212ea0a3ac70594f916bb7d7613389b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2415,6 +2416,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7966367339648003434, guid: 20127d3fd042d9840ab0057ef6d22bb8,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7966367340311232887, guid: 20127d3fd042d9840ab0057ef6d22bb8,
         type: 3}
       propertyPath: sail.Array.size
@@ -2435,11 +2441,11 @@ PrefabInstance:
       propertyPath: sail
       value: 
       objectReference: {fileID: 994961292}
-    - target: {fileID: 7966367339648003434, guid: 20127d3fd042d9840ab0057ef6d22bb8,
+    - target: {fileID: 7966367340311232887, guid: 20127d3fd042d9840ab0057ef6d22bb8,
         type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: shipApproveMenuControl
+      value: 
+      objectReference: {fileID: 1934474650}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20127d3fd042d9840ab0057ef6d22bb8, type: 3}
 --- !u!1 &994961292
@@ -4650,8 +4656,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.053201, y: 1, z: 1.1061317}
+  m_Center: {x: 0.17370467, y: 1.2028875e-10, z: -0.053067423}
 --- !u!23 &1930371132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4714,6 +4720,12 @@ MonoBehaviour:
   animationName: idle
   targetPoint: {fileID: 1213336313}
   shipController: {fileID: 598501185}
+--- !u!1 &1934474650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4502730249198895471, guid: 20127d3fd042d9840ab0057ef6d22bb8,
+    type: 3}
+  m_PrefabInstance: {fileID: 942104341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2063954068
 GameObject:
   m_ObjectHideFlags: 0
