@@ -6,6 +6,7 @@ TagManager:
   tags:
   - character_ui
   - Enemy
+  - weaponsw
   layers:
   - Default
   - TransparentFX

@@ -119,6 +119,7 @@
     <Compile Include="Assets\mainscripts\sailsc.cs" />
     <Compile Include="Assets\mainscripts\ScenesLoader.cs" />
     <Compile Include="Assets\mainscripts\scroolMmenu.cs" />
+    <Compile Include="Assets\mainscripts\shootsc.cs" />
     <Compile Include="Assets\mainscripts\Utils\BulkMessageWordUI.cs" />
     <Compile Include="Assets\mainscripts\Utils\CharacterParametersView.cs" />
     <Compile Include="Assets\mainscripts\Utils\DamageTrigger.cs" />

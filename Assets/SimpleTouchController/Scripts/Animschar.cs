@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Animschar : MonoBehaviour
 {
+    public GameObject FX;
+    public GameObject weapon;
     SimpleTouchController touch;
     Rigidbody rig;
     Animator mainchar;
@@ -14,6 +16,7 @@ public class Animschar : MonoBehaviour
 
     void Start()
     {
+
         sword.swordCollider.enabled = false;
         isAttack = false;
         touch = GetComponent<PlayerMoveController>().leftController;
@@ -68,4 +71,24 @@ public class Animschar : MonoBehaviour
     public void attackBegin() => isAttack = true;
 
     public void attackEnd() => isAttack = false;
+
+    public void hide()
+    {
+        weapon.SetActive(false);
+    }
+    public void onhide()
+    {
+
+        weapon.SetActive(true);
+    }
+    public void shoot()
+    {
+        FX.SetActive(true);
+        mainchar.SetBool("switchpistolidle", true);
+    }
+    public void shootend()
+    {
+        FX.SetActive(false);
+        mainchar.SetBool("switchpistolidle", false);
+    }
 }
