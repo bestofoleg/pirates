@@ -28,7 +28,7 @@ public class CharacterUIController : MonoBehaviour
     public GameObject shipApproveMenuControl;
 
     private ShipUIController _shipUIController;
-    public GameObject sail;
+    public sailsc sail;
     private void Awake()
     {
         GameObject player = GameObject.FindWithTag("Player");
@@ -42,7 +42,7 @@ public class CharacterUIController : MonoBehaviour
 
     public void approveShipControl(bool mode)
     {
-        sail.SetActive(true);
+        sail.gameObject.SetActive(true);
         _shipUIController.setShipControlMode(mode);
         shipApproveMenuControl.SetActive(false);
     }

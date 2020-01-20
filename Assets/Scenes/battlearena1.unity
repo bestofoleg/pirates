@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a67d906e13c9f86419afcfa9569f8e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipController: {fileID: 598501185}
+  shipController: {fileID: 1636359794}
 --- !u!1 &421985483 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 150818, guid: a2fdfebba1c706e41b0fa8a819b914e9,
@@ -1122,6 +1122,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: a7aa2e1a0b3b1734c8c7b29a3dd20c2e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1209,6 +1211,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &559068417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,88 +1483,31 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1182883545}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &598501178
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598501177}
-  serializedVersion: 2
-  m_Mass: 42000
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 112
-  m_CollisionDetection: 2
 --- !u!4 &598501181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8,
     type: 3}
   m_PrefabInstance: {fileID: 1182883545}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &598501182
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598501177}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+--- !u!95 &598501183
+Animator:
   serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: -1
-  m_Mesh: {fileID: 4300000, guid: 8dd6d1638da6f31428a66d394bc274f8, type: 3}
---- !u!114 &598501183
-MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598501177}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b086fdc6a7aaa114eb91006cf2431972, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offset: {x: 0, y: 2.4, z: -4.5}
---- !u!114 &598501184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598501177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae8ef0545cd89264bb74ccf46f00d07d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  centerOfMassOffset: {x: 0, y: 2.4, z: -4.5}
-  buoyancyMesh: {fileID: 4300000, guid: 8dd6d1638da6f31428a66d394bc274f8, type: 3}
---- !u!114 &598501185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598501177}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86ce95e9c8466f24bb674de629a7d46e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forwardspeedsail: 0
-  moveSpeed: 7
-  anim: {fileID: 0}
-  rotateSpeed: 0.3
-  shipRigidbody: {fileID: 598501178}
-  characterTransform: {fileID: 1481050183}
-  targetPoint: {fileID: 1213336313}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 697c397087ebb2b4f8a5fbbaade35227, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &602387308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2037,6 +1984,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
@@ -2192,6 +2141,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 2212ea0a3ac70594f916bb7d7613389b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2260,6 +2211,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &908454427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2440,12 +2393,17 @@ PrefabInstance:
         type: 3}
       propertyPath: sail
       value: 
-      objectReference: {fileID: 994961292}
+      objectReference: {fileID: 994961294}
     - target: {fileID: 7966367340311232887, guid: 20127d3fd042d9840ab0057ef6d22bb8,
         type: 3}
       propertyPath: shipApproveMenuControl
       value: 
       objectReference: {fileID: 1934474650}
+    - target: {fileID: 4502730249198895471, guid: 20127d3fd042d9840ab0057ef6d22bb8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20127d3fd042d9840ab0057ef6d22bb8, type: 3}
 --- !u!1 &994961292
@@ -2499,7 +2457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eea99acf3cd69e4f9de54f2ff32e792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {fileID: 598501185}
+  speed: {fileID: 0}
 --- !u!1 &1028714395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,7 +2706,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1636359797}
     m_Modifications:
     - target: {fileID: 134070, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
       propertyPath: m_Name
@@ -2760,23 +2718,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -84.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
-      propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2784,11 +2742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3742,7 +3700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1626500689
 Transform:
   m_ObjectHideFlags: 0
@@ -3815,6 +3773,89 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626500688}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1636359793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1636359797}
+  - component: {fileID: 1636359796}
+  - component: {fileID: 1636359795}
+  - component: {fileID: 1636359794}
+  m_Layer: 0
+  m_Name: Ship
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1636359794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636359793}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ce95e9c8466f24bb674de629a7d46e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forwardspeedsail: 0
+  moveSpeed: 7
+  anim: {fileID: 0}
+  rotateSpeed: 0.3
+  shipRigidbody: {fileID: 1636359795}
+  characterTransform: {fileID: 1481050183}
+  targetPoint: {fileID: 1213336313}
+--- !u!54 &1636359795
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636359793}
+  serializedVersion: 2
+  m_Mass: 42000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 3
+--- !u!64 &1636359796
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636359793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 8dd6d1638da6f31428a66d394bc274f8, type: 3}
+--- !u!4 &1636359797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636359793}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 19, y: -1.9, z: -84.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 598501181}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1651128448
 GameObject:
   m_ObjectHideFlags: 0
@@ -4172,6 +4213,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 994961292}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1725513044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4190,6 +4244,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -4719,7 +4775,7 @@ MonoBehaviour:
   characterUITag: character_ui
   animationName: idle
   targetPoint: {fileID: 1213336313}
-  shipController: {fileID: 598501185}
+  shipController: {fileID: 1636359794}
 --- !u!1 &1934474650 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4502730249198895471, guid: 20127d3fd042d9840ab0057ef6d22bb8,

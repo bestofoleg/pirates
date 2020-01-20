@@ -26,6 +26,8 @@ public class ShipUIController : MonoBehaviour
     public ShipController shipController;
 
     private GameObject shipControlApproveMenu;
+
+    private sailsc speedControllerUI;
   
     
     private void Awake()
@@ -68,5 +70,7 @@ public class ShipUIController : MonoBehaviour
         characterAnimator.enabled = !mode;
         shipController.targetPoint = targetPoint;
         shipController.enabled = mode;
+        speedControllerUI = mode ? characterUiController.sail : null;
+        if (mode) {characterUiController.sail.speed = shipController;}
     }
 }
