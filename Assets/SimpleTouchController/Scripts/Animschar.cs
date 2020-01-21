@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Animschar : MonoBehaviour
 {
+    public Shootpistol pistl;
+    public GameObject crosshair;
+    public GameObject preweapon;
     public GameObject FX;
     public GameObject weapon;
     SimpleTouchController touch;
@@ -16,7 +19,7 @@ public class Animschar : MonoBehaviour
 
     void Start()
     {
-
+        crosshair.SetActive(false);
         sword.swordCollider.enabled = false;
         isAttack = false;
         touch = GetComponent<PlayerMoveController>().leftController;
@@ -51,7 +54,7 @@ public class Animschar : MonoBehaviour
         if (isAttack)
         {
             if (mainchar.GetCurrentAnimatorStateInfo(0).IsName("hightatackidle"))
-            {
+            {   
                 sword.hightAttack();
             }
 
@@ -74,15 +77,19 @@ public class Animschar : MonoBehaviour
 
     public void hide()
     {
+        crosshair.SetActive(false);
+        preweapon.SetActive(true);
         weapon.SetActive(false);
     }
     public void onhide()
     {
-
+        crosshair.SetActive(true);
+        preweapon.SetActive(false);
         weapon.SetActive(true);
     }
     public void shoot()
     {
+        pistl.Shot();
         FX.SetActive(true);
         mainchar.SetBool("switchpistolidle", true);
     }
