@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class ShipController : MonoBehaviour
 {
+    public ShipAnimationController shipAnimationController;
+
+    private ShipAnimationController.ShipAnimationState shipAnimationState;
     public int forwardspeedsail;
     public float moveSpeed;
-   public Animator anim;
+    public Animator anim;
     public float rotateSpeed;
 
     public Rigidbody shipRigidbody;
@@ -15,6 +18,17 @@ public class ShipController : MonoBehaviour
     public Transform characterTransform;
 
     public Transform targetPoint;
+
+    private bool isRotate;
+
+    private float currentYAngle;
+
+    private void Awake() 
+    {
+        currentYAngle = transform.rotation.eulerAngles.y;
+        isRotate = false;
+        shipAnimationState = new ShipAnimationController.ShipAnimationState();    
+    }
     
     private void FixedUpdate()
     {
@@ -23,22 +37,43 @@ public class ShipController : MonoBehaviour
    
     public void rotateShip(float scale)
     {
-        transform.Rotate(Vector3.up * scale * rotateSpeed * Time.deltaTime);
+        currentYAngle += scale * rotateSpeed * Time.deltaTime;
+        transform.rotation = Quaternion.AngleAxis(
+            currentYAngle,
+            Vector3.up
+        );
+        if (scale > 0) 
+            shipAnimationState.setToRigthState();
+        if(scale < 0)
+            shipAnimationState.setToLeftState();
+    }
+
+    public void setIsRotate(bool isRotate) {
+        this.isRotate = isRotate;
     }
 
     private void Update()
     {
+        shipAnimationController.translateToAnimationState(ref shipAnimationState);
+
+        if(!isRotate) {
+            shipAnimationState.toFloatingState();
+        }
+
         if (forwardspeedsail == 1)
         {
-            shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime);
+            transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            //shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime);
         }
         if (forwardspeedsail >= 2)
         {
-            shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime * 2);
+            transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            //shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime * 2);
         }
         if (forwardspeedsail == 0)
         {
-            shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * 0 * Time.deltaTime);
+            transform.position += transform.forward * 0 * Time.deltaTime;
+            //shipRigidbody.MovePosition(transform.position + transform.forward * moveSpeed * 0 * Time.deltaTime);
         }
 
         if (forwardspeedsail < 0)

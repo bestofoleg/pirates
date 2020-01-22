@@ -1122,6 +1122,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: a7aa2e1a0b3b1734c8c7b29a3dd20c2e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1209,6 +1211,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &559068417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1483,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1182883545}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &598501180 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1388056087109894463, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1182883545}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598501177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5104eea10b5dd64092cfeef3b3a9c47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &598501181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 453966, guid: 0d71d30c9fed80c44b9d25ec8f50c8f8,
@@ -1980,6 +1996,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
@@ -2135,6 +2153,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 2212ea0a3ac70594f916bb7d7613389b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2203,6 +2223,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &908454427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3774,6 +3796,7 @@ GameObject:
   - component: {fileID: 1636359797}
   - component: {fileID: 1636359796}
   - component: {fileID: 1636359795}
+  - component: {fileID: 1636359798}
   - component: {fileID: 1636359794}
   m_Layer: 0
   m_Name: Ship
@@ -3794,6 +3817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ce95e9c8466f24bb674de629a7d46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shipAnimationController: {fileID: 598501180}
   forwardspeedsail: 0
   moveSpeed: 7
   anim: {fileID: 0}
@@ -3846,6 +3870,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636359798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636359793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5104eea10b5dd64092cfeef3b3a9c47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1651128448
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,6 +4250,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1725513044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4232,6 +4270,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0

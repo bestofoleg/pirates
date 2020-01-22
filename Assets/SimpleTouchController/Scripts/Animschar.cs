@@ -17,9 +17,9 @@ public class Animschar : MonoBehaviour
     private bool isAttack;
     public Sword sword;
 
-    void Start()
+    void Awake()
     {
-        crosshair.SetActive(false);
+        //crosshair.SetActive(false);
         sword.swordCollider.enabled = false;
         isAttack = false;
         touch = GetComponent<PlayerMoveController>().leftController;

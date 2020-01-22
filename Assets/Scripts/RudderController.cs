@@ -1,9 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class RudderController : MonoBehaviour, IDragHandler
+public class RudderController : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     public ShipController shipController;
+
+    public void OnBeginDrag(PointerEventData eventData) {
+        shipController.setIsRotate(true);
+    }
+
+    public void OnEndDrag(PointerEventData eventData) {
+        shipController.setIsRotate(false);
+    }
 
     public void OnDrag(PointerEventData eventData)
     {

@@ -20,7 +20,6 @@ public class FloatingGameEntityFlat : GameEntity
     protected override void Awake()
     {
         base.Awake();
-
         //By default, this script will take the render mesh to compute forces. You can override it, using a simpler mesh.
         Mesh m = buoyancyMesh == null ? GetComponent<MeshFilter>().mesh : buoyancyMesh;
 

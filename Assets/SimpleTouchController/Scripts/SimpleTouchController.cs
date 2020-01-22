@@ -27,7 +27,6 @@ public class SimpleTouchController : MonoBehaviour {
 
 	public void BeginDrag()
 	{
-		Debug.Log("Begin!");
 		touchPresent = true;
 		if(TouchStateEvent != null)
 			TouchStateEvent(touchPresent);
