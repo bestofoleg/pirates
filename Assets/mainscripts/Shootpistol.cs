@@ -9,21 +9,30 @@ public class Shootpistol : MonoBehaviour
     public float distance;
     private RaycastHit hits;
     public GameObject enemy;
-    public CapsuleCollider caps;
+    
     
     public void Shot()
     {
         if(Physics.Raycast(transform.position, transform.forward, out hits, distance))
         {    if(hits.transform.tag == "Enemy")
             {
-                enemy = hits.collider.gameObject;
+                enemy = hits.collider.gameObject.GetComponent<GameObject>();
+                dum = hits.collider.gameObject.GetComponent<Dummy>();
+
+
                 dum = enemy.GetComponent<Dummy>();
                 if (!dum)
                 {
-                    enemy = hits.collider.gameObject;
-                    caps = FindObjectOfType<CapsuleCollider>();
-                    dum = enemy.GetComponent<Dummy>();
+                   
+                    enemy = hits.collider.gameObject.GetComponent<GameObject>() ;
+                    dum = hits.collider.gameObject.GetComponent<Dummy>();
+                    if(enemy.name == "wakeup") {
 
+                        Physics.Raycast(transform.position, transform.forward, out hits);
+                        enemy = hits.collider.gameObject;
+
+                        dum = hits.collider.gameObject.GetComponent<Dummy>();
+                    }
                 }
                 
                 dum.health -= 80;
