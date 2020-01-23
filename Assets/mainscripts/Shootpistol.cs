@@ -8,13 +8,24 @@ public class Shootpistol : MonoBehaviour
     public float hitpower;
     public float distance;
     private RaycastHit hits;
-   
+    public GameObject enemy;
+    public CapsuleCollider caps;
+    
     public void Shot()
     {
         if(Physics.Raycast(transform.position, transform.forward, out hits, distance))
         {    if(hits.transform.tag == "Enemy")
             {
-                dum.GetComponent<Dummy>();
+                enemy = hits.collider.gameObject;
+                dum = enemy.GetComponent<Dummy>();
+                if (!dum)
+                {
+                    enemy = hits.collider.gameObject;
+                    caps = FindObjectOfType<CapsuleCollider>();
+                    dum = enemy.GetComponent<Dummy>();
+
+                }
+                
                 dum.health -= 80;
             
             }
