@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ShipUIController : MonoBehaviour
 {
+    public ShipHealthUI shipHealthUI;
+
     public string playerTag = "Player";
 
     public string characterUITag = "character_ui";
@@ -41,11 +43,15 @@ public class ShipUIController : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        
         if (playerTag.Equals(collider.gameObject.tag))
         {   
             characterUiController.setShipUIController(this);
             characterUiController.shipApproveMenuControl.SetActive(true);
+            for(int i = 0; i < characterUiController.shipHealthViewControllers.Length; i ++)
+            {
+                characterUiController.shipHealthViewControllers[i].dummy = shipHealthUI.dummies[i];
+                characterUiController.shipHealthViewControllers[i].init();
+            }
         }
     }
 
@@ -55,6 +61,10 @@ public class ShipUIController : MonoBehaviour
         {
             characterUiController.setShipUIController(this);
             characterUiController.shipApproveMenuControl.SetActive(false);
+            for(int i = 0; i < characterUiController.shipHealthViewControllers.Length; i ++)
+            {
+                characterUiController.shipHealthViewControllers[i].dummy = null;
+            }
         }
     }
 

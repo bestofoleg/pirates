@@ -3,6 +3,10 @@ using UnityEngine.UI;
 
 public class Dummy : MonoBehaviour
 {
+    public delegate void DamageHandler(int health);
+
+    public event DamageHandler onDamage;
+
     public string dummyIsDeathMessage = "Dummy is death!";
 
     public bool isBulkDamage;
@@ -26,6 +30,7 @@ public class Dummy : MonoBehaviour
         }
         
         spendHealth(damage);
+        onDamage?.Invoke(health);
     }
 
     private void bulkDamage(int damage)

@@ -5,6 +5,8 @@ using System.Collections.Generic;
 
 public class CharacterUIController : MonoBehaviour
 {
+    public ShipHealthViewController [] shipHealthViewControllers;
+
     public GoldView goldView;
 
     private Inventory _inventory;
