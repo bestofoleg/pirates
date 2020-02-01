@@ -18,7 +18,8 @@ public class ShipHealthViewController : MonoBehaviour
 
     public void init()
     {
-        currentStateIndex = initialStateIndex;
+        currentStateIndex = 
+            (dummy.health > states.Length) ? states.Length - 1 : states.Length - dummy.health;
         imageComponent = GetComponent<Image>();
         imageComponent.color = states[currentStateIndex];
         dummy.onDamage += onDamage;
