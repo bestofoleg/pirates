@@ -9,9 +9,9 @@ public class Bullet : MonoBehaviour
     public int damage;
 
     private void OnTriggerEnter(Collider other) {
-            if (dummyTag.Equals(other.gameObject.tag)) {
-                other.gameObject.GetComponent<Dummy>().Damage(damage);
-                Destroy(this.gameObject);
-            }
+        if (dummyTag.Equals(other.gameObject.tag)) {
+            other.gameObject.GetComponent<Dummy>().Damage(damage);
+            Destroy(this.gameObject);
+        }
     }
 }

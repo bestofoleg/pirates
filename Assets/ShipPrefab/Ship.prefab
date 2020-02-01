@@ -1165,6 +1165,7 @@ GameObject:
   - component: {fileID: 3778285975722471280}
   - component: {fileID: 3778285975722471281}
   - component: {fileID: 3778285975722471286}
+  - component: {fileID: 3502432424070824305}
   - component: {fileID: 3778285975722471283}
   m_Layer: 0
   m_Name: ShipControllerTrigger
@@ -1246,6 +1247,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.053201, y: 1, z: 1.1061317}
   m_Center: {x: 0.17370467, y: 1.2028875e-10, z: -0.053067423}
+--- !u!114 &3502432424070824305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778285975722471284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf8b59337d3d6f49bec448a3a8a1092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dummies:
+  - {fileID: 637892184629802499}
+  - {fileID: 5186769333353586205}
+  - {fileID: 509315880124707223}
+  - {fileID: 3382658859423359866}
+  - {fileID: 899865460503150095}
+  - {fileID: 8993425105427789483}
+  - {fileID: 3112855629880265284}
+  - {fileID: 6154801764156724591}
 --- !u!114 &3778285975722471283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1258,7 +1280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 393b3368a5c154d47ba19fe4c0d87b5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipHealthUI: {fileID: 0}
+  shipHealthUI: {fileID: 3502432424070824305}
   playerTag: Player
   characterUITag: character_ui
   animationName: idle
