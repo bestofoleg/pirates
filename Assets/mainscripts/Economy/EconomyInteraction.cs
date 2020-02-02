@@ -31,9 +31,10 @@ public class EconomyInteraction : MonoBehaviour
         }
         else
         {
-            
+
             Debug.LogError("Error! Game Object with character UI tag " + characterUITag + " cannot found!");
         }
+
     }
 
     private void OnTriggerEnter(Collider other)

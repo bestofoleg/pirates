@@ -6,7 +6,7 @@ using UnityEngine;
 public class ShipController : MonoBehaviour
 {
     public ShipAnimationController shipAnimationController;
-
+    public string playerTag = "Player";
     private ShipAnimationController.ShipAnimationState shipAnimationState;
     public int forwardspeedsail;
     public float moveSpeed;
@@ -54,6 +54,8 @@ public class ShipController : MonoBehaviour
 
     private void Update()
     {
+        characterTransform.tag = playerTag;
+        
         shipAnimationController.translateToAnimationState(ref shipAnimationState);
 
         if(!isRotate) {

@@ -16,7 +16,7 @@ public class spawn : MonoBehaviour
         temp.transform.parent = null;
         this.GetComponent<spawn>().enabled = false;
     }
-    private void Update()
+    private void Awake()
     {
         if (!FindObjectOfType<Camera>()) {
 

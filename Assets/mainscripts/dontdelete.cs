@@ -16,7 +16,7 @@ public class dontdelete : MonoBehaviour
 
     }
 
-    void Update()
+    void Awake()
     {
         cl.colldowns.fillAmount -= Time.deltaTime / 8;
         firecold.colldowns.fillAmount -= Time.deltaTime / 8;
