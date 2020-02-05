@@ -14,6 +14,7 @@ public class CharacterUIController : MonoBehaviour
     public GameObject fishmanInteractionMenu;
 
     public GameObject gunmanInteractionMenu;
+    public GameObject nomoney;
 
     public GameObject cavegirlmenuact;
 
@@ -74,6 +75,16 @@ public class CharacterUIController : MonoBehaviour
     {
         gunmanInteractionMenu.SetActive(isActive);
 
+        if (gunmanInteractionMenu == true)
+        {
+            if (_inventory.goldQuantity < 500)
+            {
+
+                nomoney.SetActive(true);
+            }
+        }
+       
+
 
     }
     public void activeCaveGirlMenu(bool isActive)
@@ -94,7 +105,7 @@ public class CharacterUIController : MonoBehaviour
 
 
 
-
+ 
 
 
 

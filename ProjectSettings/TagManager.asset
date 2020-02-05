@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - weaponsw
   - Dummy
+  - nomoney
+  - offmenu
+  - onmenu
   layers:
   - Default
   - TransparentFX
