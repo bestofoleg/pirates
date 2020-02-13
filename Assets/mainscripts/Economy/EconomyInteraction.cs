@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class EconomyInteraction : MonoBehaviour
 {
-   public GameObject gunmannomoney;
+   private GameObject gunmannomoney;
     private Inventory money;
     public string playerTag;
-
+    public string nomtag;
     public string characterUITag;
     
     public InteractionType interactionType;
@@ -21,12 +21,13 @@ public class EconomyInteraction : MonoBehaviour
 
     private void Awake()
     {
-        
-        
+
+        GameObject lol = GameObject.FindGameObjectWithTag("NoNo");
         GameObject player = GameObject.FindWithTag("Player");
         money = player.GetComponent<Inventory>();
         playerGameObject = GameObject.FindWithTag(playerTag);
         GameObject characterUI = GameObject.FindWithTag(characterUITag);
+        gunmannomoney = lol;
         if (characterUI != null)
         {
             _controller = characterUI.GetComponent<CharacterUIController>();
@@ -81,13 +82,16 @@ public class EconomyInteraction : MonoBehaviour
         if (other.tag.Equals(playerTag))
         {
             _controller.activeCaveGirlMenu(InteractionType.CAVEGIRL.Equals(interactionType));
+           
+            
             if (InteractionType.GUNMAN.Equals(interactionType)) { 
+
             
             if (money.goldQuantity < 500)
                 {
                     
                     _controller.activateGunmanMenu(false);
-                    gunmannomoney.SetActive (true);
+                    gunmannomoney.SetActive(true);
                 
                 }
             

@@ -927,7 +927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400082, guid: fb1e66db6d516ab49939b1f24e267269, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -785.69
+      value: -785.63
       objectReference: {fileID: 0}
     - target: {fileID: 400082, guid: fb1e66db6d516ab49939b1f24e267269, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1264,8 +1264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81f3aa22e7b866428ad478ab2c42c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunmannomoney: {fileID: 0}
   playerTag: Player
+  nomtag: 
   characterUITag: character_ui
   interactionType: 0
 --- !u!1001 &315584651
@@ -4733,8 +4733,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81f3aa22e7b866428ad478ab2c42c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunmannomoney: {fileID: 0}
   playerTag: Player
+  nomtag: 
   characterUITag: character_ui
   interactionType: 3
 --- !u!65 &1168153096
@@ -7239,8 +7239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81f3aa22e7b866428ad478ab2c42c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunmannomoney: {fileID: 0}
   playerTag: Player
+  nomtag: 
   characterUITag: character_ui
   interactionType: 2
 --- !u!65 &1953434621

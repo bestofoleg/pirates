@@ -8214,7 +8214,6 @@ MonoBehaviour:
   goldView: {fileID: 2088992613659361331}
   fishmanInteractionMenu: {fileID: 5772817284878173113}
   gunmanInteractionMenu: {fileID: 4561081195512597423}
-  nomoney: {fileID: 1417898860615693142}
   cavegirlmenuact: {fileID: 7139140138121589360}
   Mission: {fileID: 7666430369374194458}
   attackView: {fileID: 7482864296204435384}
@@ -15705,6 +15704,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8867355995034064637, guid: c6ea7154fb44cd540a12ee50acd1f2dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoNo
+      objectReference: {fileID: 0}
     - target: {fileID: 4277062158855858376, guid: c6ea7154fb44cd540a12ee50acd1f2dc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15820,12 +15824,6 @@ PrefabInstance:
 --- !u!224 &6050977065587182947 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4277062158855858376, guid: c6ea7154fb44cd540a12ee50acd1f2dc,
-    type: 3}
-  m_PrefabInstance: {fileID: 7539675362347869611}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1417898860615693142 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8867355995034064637, guid: c6ea7154fb44cd540a12ee50acd1f2dc,
     type: 3}
   m_PrefabInstance: {fileID: 7539675362347869611}
   m_PrefabAsset: {fileID: 0}
