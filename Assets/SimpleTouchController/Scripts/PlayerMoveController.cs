@@ -12,6 +12,8 @@ public class PlayerMoveController : MonoBehaviour {
 	public float speedMovements = 5f;
 	public float speedProgressiveLook = 10f;
 
+	public CharacterUIController uIController;
+
 	// PRIVATE
 	private Rigidbody _rigidbody;
 	[SerializeField] bool continuousRightController = true;

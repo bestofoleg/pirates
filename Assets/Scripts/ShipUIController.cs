@@ -32,19 +32,19 @@ public class ShipUIController : MonoBehaviour
     private sailsc speedControllerUI;
   
     
-    private void Awake()
+    private void initAllComponents(Collider collider)
     {
-        GameObject ui = GameObject.FindWithTag(characterUITag);
-        character = GameObject.FindWithTag(playerTag);
-        characterUiController = ui.GetComponent<CharacterUIController>();
-        playerMoveController = character.GetComponent<PlayerMoveController>();
-        characterAnimator = character.GetComponent<Animator>();
+            character = collider.gameObject;
+            playerMoveController = character.GetComponent<PlayerMoveController>();
+            characterUiController = playerMoveController.uIController;
+            characterAnimator = character.GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider collider)
     {
         if (playerTag.Equals(collider.gameObject.tag))
         {   
+            initAllComponents(collider);
             characterUiController.setShipUIController(this);
             characterUiController.shipApproveMenuControl.SetActive(true);
             for(int i = 0; i < characterUiController.shipHealthViewControllers.Length; i ++)
@@ -77,6 +77,7 @@ public class ShipUIController : MonoBehaviour
         playerMoveController.cameraTransform.rotation = targetPoint.rotation;
         playerMoveController.enabled = !mode;
         character.transform.position = targetPoint.position;
+        shipController.characterTransform = character.transform;
         characterAnimator.enabled = !mode;
         shipController.targetPoint = targetPoint;
         shipController.enabled = mode;

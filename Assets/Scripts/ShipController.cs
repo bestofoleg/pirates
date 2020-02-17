@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ShipController : MonoBehaviour
 {
@@ -29,11 +26,6 @@ public class ShipController : MonoBehaviour
         isRotate = false;
         shipAnimationState = new ShipAnimationController.ShipAnimationState();    
     }
-    
-    private void FixedUpdate()
-    {
-        anim = GetComponent<Animator>();
-    }
    
     public void rotateShip(float scale)
     {
@@ -53,9 +45,7 @@ public class ShipController : MonoBehaviour
     }
 
     private void Update()
-    {
-        characterTransform.tag = playerTag;
-        
+    {        
         shipAnimationController.translateToAnimationState(ref shipAnimationState);
 
         if(!isRotate) {
@@ -88,5 +78,6 @@ public class ShipController : MonoBehaviour
         }
         characterTransform.position = targetPoint.position;
         characterTransform.rotation = transform.rotation;
+        Debug.Log(targetPoint);
     }
 }

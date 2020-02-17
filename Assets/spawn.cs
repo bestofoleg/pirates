@@ -1,25 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class spawn : MonoBehaviour
 {
     public GameObject spawnplayer;
-    
 
     public void CreatePlayer ()
     {
-        GameObject temp = GameObject.Instantiate(spawnplayer);
-        temp.transform.parent = transform;
-        temp.transform.localPosition = Vector3.zero;
-        temp.transform.localRotation = Quaternion.Euler(Vector3.zero);
-        temp.transform.parent = null;
+        GameObject temp = GameObject.Instantiate(
+            spawnplayer, 
+            transform.position,
+            transform.rotation
+        );
         this.GetComponent<spawn>().enabled = false;
     }
     private void Awake()
     {
         if (!FindObjectOfType<Camera>()) {
-
             CreatePlayer();
         }
     }
