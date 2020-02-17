@@ -150,6 +150,7 @@
     <None Include="Assets\mainscripts\Photon\PhotonLibs\Photon3Unity3D.xml" />
     <None Include="Assets\main models\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
     <None Include="Assets\mainscripts\FloatingEntities\Shaders\Ocean.shader" />
+    <None Include="Assets\main models\LowPolyWater_Pack\Plane Meshes\Ocean50x50W750H750.asset.txt" />
     <None Include="Assets\Fantasy Skybox\Readme.txt" />
     <None Include="Assets\Fantasy Skybox\Readme\Readme.txt" />
     <None Include="Assets\GUI Animator FREE\Readme.txt" />
