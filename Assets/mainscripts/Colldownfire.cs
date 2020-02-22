@@ -9,20 +9,15 @@ public class Colldownfire : MonoBehaviour
     
     void Start()
     {
-       
         fill.SetActive(false);
     }
 
     
     void Update()
     {   
-        
-        
-        
         if (colldowns.fillAmount == 0) 
         {
-            fill.SetActive(false);
-            
+            fill.SetActive(false);       
         }
     }
 }

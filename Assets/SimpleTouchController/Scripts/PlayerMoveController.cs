@@ -14,6 +14,8 @@ public class PlayerMoveController : MonoBehaviour {
 
 	public CharacterUIController uIController;
 
+	public ShootGunsControll shootGunsControll;
+
 	// PRIVATE
 	private Rigidbody _rigidbody;
 	[SerializeField] bool continuousRightController = true;

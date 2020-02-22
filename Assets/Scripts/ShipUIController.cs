@@ -30,14 +30,21 @@ public class ShipUIController : MonoBehaviour
     private GameObject shipControlApproveMenu;
 
     private sailsc speedControllerUI;
+
+    public ShipGunShoot [] leftGuns = new ShipGunShoot [3];
+
+    public ShipGunShoot [] rightGuns = new ShipGunShoot [3];
   
     
     private void initAllComponents(Collider collider)
     {
-            character = collider.gameObject;
-            playerMoveController = character.GetComponent<PlayerMoveController>();
-            characterUiController = playerMoveController.uIController;
-            characterAnimator = character.GetComponent<Animator>();
+        character = collider.gameObject;
+
+        playerMoveController = character.GetComponent<PlayerMoveController>();
+        characterUiController = playerMoveController.uIController;
+        playerMoveController.shootGunsControll.leftGuns = leftGuns;
+        playerMoveController.shootGunsControll.rightGuns = rightGuns;
+        characterAnimator = character.GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider collider)

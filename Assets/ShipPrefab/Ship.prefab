@@ -1780,6 +1780,18 @@ MonoBehaviour:
   animationName: idle
   targetPoint: {fileID: 3778285975568516532}
   shipController: {fileID: 3778285975948546367}
+  leftGuns:
+  - {fileID: 127835429}
+  - {fileID: 1197243176}
+  - {fileID: 2141892257}
+  - {fileID: 1555042379}
+  - {fileID: 1737215907}
+  rightGuns:
+  - {fileID: 1522248717}
+  - {fileID: 2047615940}
+  - {fileID: 125574653}
+  - {fileID: 1115029706}
+  - {fileID: 84031502}
 --- !u!1 &3778285975734466032
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,8 +19,15 @@ public class ShipGunShoot : MonoBehaviour
         ball.GetComponent<Rigidbody>().AddForce((ball.transform.forward + (ball.transform.up / 2f)) * power_shoot, ForceMode.Impulse);
         smokespawn = Instantiate(smoke, muzzle_point.position,muzzle_point.rotation);
     }
-    private void Update()
-        
+
+    public void Shoot_r()
+    {
+        timer = 1000;
+        ball = Instantiate(ballpref, muzzle_point.position, muzzle_point.rotation);
+        ball.GetComponent<Rigidbody>().AddForce((ball.transform.forward + (ball.transform.up / 2f)) * - power_shoot, ForceMode.Impulse);
+        smokespawn = Instantiate(smoke, muzzle_point.position,muzzle_point.rotation);
+    }
+    private void Update()    
     {
         timer -= 1f;
         if (timer < 0) { 

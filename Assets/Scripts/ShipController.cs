@@ -78,6 +78,5 @@ public class ShipController : MonoBehaviour
         }
         characterTransform.position = targetPoint.position;
         characterTransform.rotation = transform.rotation;
-        Debug.Log(targetPoint);
     }
 }
