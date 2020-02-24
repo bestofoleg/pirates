@@ -74,18 +74,13 @@ public class CharacterUIController : MonoBehaviour
     public void activateGunmanMenu(bool isActive)
     {
         gunmanInteractionMenu.SetActive(isActive);
-
-       
-
-
     }
+
     public void activeCaveGirlMenu(bool isActive)
     {
-
         cavegirlmenuact.SetActive(isActive);
-
-
     }
+    
     public void activeMissionMenu(bool isActive)
     {
 

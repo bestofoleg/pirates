@@ -15083,16 +15083,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 189b25cdb1998674a953647fd1f1fe22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftGuns:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  rightGuns:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  leftGuns: []
+  rightGuns: []
   l_fire: {fileID: 7983229298408739651}
   r_fire: {fileID: 7983229297556359748}
   fire_l: {fileID: 7983229298408739662}
@@ -15661,6 +15653,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8553816925532846874, guid: 332f8e970ac955b49b72b2f7f5a87941,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553816924816515613, guid: 332f8e970ac955b49b72b2f7f5a87941,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553816925532846879, guid: 332f8e970ac955b49b72b2f7f5a87941,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553816924816515614, guid: 332f8e970ac955b49b72b2f7f5a87941,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8553816924780397098, guid: 332f8e970ac955b49b72b2f7f5a87941,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -15681,8 +15693,19 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Shots_l
       objectReference: {fileID: 0}
+    - target: {fileID: 8553816925000491513, guid: 332f8e970ac955b49b72b2f7f5a87941,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7299313394416499406}
+    - target: {fileID: 8553816925000491513, guid: 332f8e970ac955b49b72b2f7f5a87941,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Shoot_r
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8553816924076817013, guid: 332f8e970ac955b49b72b2f7f5a87941, type: 3}
+    - {fileID: 8553816925000491514, guid: 332f8e970ac955b49b72b2f7f5a87941, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 332f8e970ac955b49b72b2f7f5a87941, type: 3}
 --- !u!224 &7983229296990431658 stripped
 RectTransform:

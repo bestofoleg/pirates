@@ -36,14 +36,12 @@ public class ShipUIController : MonoBehaviour
     public ShipGunShoot [] rightGuns = new ShipGunShoot [3];
   
     
-    private void initAllComponents(Collider collider)
-    {
+    private void initAllComponents(Collider collider) {
         character = collider.gameObject;
-
         playerMoveController = character.GetComponent<PlayerMoveController>();
         characterUiController = playerMoveController.uIController;
-        playerMoveController.shootGunsControll.leftGuns = leftGuns;
-        playerMoveController.shootGunsControll.rightGuns = rightGuns;
+        playerMoveController.shootGunsControll.leftGuns.AddRange(leftGuns);
+        playerMoveController.shootGunsControll.rightGuns.AddRange(rightGuns);
         characterAnimator = character.GetComponent<Animator>();
     }
 
