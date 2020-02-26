@@ -1496,6 +1496,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32c513dd4f75bc24692549a1a831b5c3, type: 3}
+--- !u!1 &81888114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5696602039395473725, guid: ddf0ae2df44c2f1478b15de1f33a0bc0,
+    type: 3}
+  m_PrefabInstance: {fileID: 5696602038826382358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &81888115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81888114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d020d57e1d7e74dbfa6f093e6cdd48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &86767629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3721,7 +3739,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &173694242
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6753,6 +6771,70 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d090de4b302fb154589f2bdad3d727e8, type: 3}
+--- !u!1 &262667551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 262667553}
+  - component: {fileID: 262667552}
+  m_Layer: 0
+  m_Name: Eemyinfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &262667552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262667551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7424e795eda74484eb20ef838ea3422e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy:
+  - {fileID: 1701825188}
+  - {fileID: 173694239}
+  - {fileID: 857014270}
+  - {fileID: 351493945}
+  - {fileID: 1311605886}
+  - {fileID: 569901997}
+  - {fileID: 2005176743}
+  - {fileID: 871168778}
+  - {fileID: 1112097992}
+  - {fileID: 1914535120}
+  - {fileID: 906277402}
+  - {fileID: 1542905461}
+  - {fileID: 2059514013}
+  - {fileID: 1563405687}
+  - {fileID: 711857004}
+  - {fileID: 1888535489}
+  - {fileID: 1711920150}
+  - {fileID: 495961361}
+  - {fileID: 1610212111}
+  enemy_info: 0
+--- !u!4 &262667553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262667551}
+  m_LocalRotation: {x: -0, y: -0.95984536, z: -0, w: 0.28052965}
+  m_LocalPosition: {x: 188.07, y: 144.714, z: -726.81}
+  m_LocalScale: {x: 0.011128711, y: 0.011052794, z: 0.012395543}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &263531225
 GameObject:
   m_ObjectHideFlags: 0
@@ -10552,7 +10634,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &351493948
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14488,7 +14570,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &495961364
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17198,7 +17280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: dd6f0ad562b5684448a980f8f5ebae4e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 240.53
+      value: 240.77335
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: dd6f0ad562b5684448a980f8f5ebae4e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17206,23 +17288,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: dd6f0ad562b5684448a980f8f5ebae4e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -738.8685
+      value: -738.74756
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: dd6f0ad562b5684448a980f8f5ebae4e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: dd6f0ad562b5684448a980f8f5ebae4e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.9237008
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: dd6f0ad562b5684448a980f8f5ebae4e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: dd6f0ad562b5684448a980f8f5ebae4e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.38311476
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: dd6f0ad562b5684448a980f8f5ebae4e, type: 3}
       propertyPath: m_RootOrder
@@ -17234,7 +17316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: dd6f0ad562b5684448a980f8f5ebae4e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -134.946
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: dd6f0ad562b5684448a980f8f5ebae4e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -18665,7 +18747,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 52
 --- !u!195 &569902000
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22573,7 +22655,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 52
 --- !u!114 &711857008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26447,7 +26529,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &857014273
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26788,7 +26870,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 52
 --- !u!195 &871168781
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27848,7 +27930,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &906277405
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32395,7 +32477,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 52
 --- !u!195 &1112097995
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36579,7 +36661,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 52
 --- !u!114 &1311605890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43379,7 +43461,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &1542905464
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -43952,7 +44034,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &1563405690
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45426,7 +45508,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &1610212114
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -51651,7 +51733,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!114 &1701825196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51974,7 +52056,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &1711920153
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -57199,7 +57281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: 69f44534b41e589419b818a3e034b707, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: 69f44534b41e589419b818a3e034b707, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -58681,7 +58763,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 52
 --- !u!114 &1888535493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62014,7 +62096,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &1914535123
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -64597,7 +64679,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 52
 --- !u!114 &2005176747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65755,7 +65837,7 @@ MonoBehaviour:
   health: 0
   damageQuantityTextUI: {fileID: 3725273420458435078, guid: feed9b0eb5686cd4cbb46303c693b41b,
     type: 3}
-  maxHealth: 100
+  maxHealth: 20
 --- !u!195 &2059514016
 NavMeshAgent:
   m_ObjectHideFlags: 0
