@@ -34,6 +34,10 @@ public class ShipUIController : MonoBehaviour
     public ShipGunShoot [] leftGuns = new ShipGunShoot [3];
 
     public ShipGunShoot [] rightGuns = new ShipGunShoot [3];
+
+    public Colldownfire leftColldown;
+
+    public Colldownfire rightColldown;
   
     
     private void initAllComponents(Collider collider) {
@@ -42,6 +46,10 @@ public class ShipUIController : MonoBehaviour
         characterUiController = playerMoveController.uIController;
         playerMoveController.shootGunsControll.leftGuns.AddRange(leftGuns);
         playerMoveController.shootGunsControll.rightGuns.AddRange(rightGuns);
+        leftColldown.colldownImage = playerMoveController.shootGunsControll.leftColldownImage;
+        rightColldown.colldownImage = playerMoveController.shootGunsControll.rightColldownImage;
+        playerMoveController.shootGunsControll.fire_l = leftColldown;
+        playerMoveController.shootGunsControll.fire_r = rightColldown;
         characterAnimator = character.GetComponent<Animator>();
     }
 
@@ -85,7 +93,7 @@ public class ShipUIController : MonoBehaviour
         shipController.characterTransform = character.transform;
         characterAnimator.enabled = !mode;
         shipController.targetPoint = targetPoint;
-        shipController.enabled = mode;
+        shipController.isFixedCharacterPosition = mode;
         speedControllerUI = mode ? characterUiController.sail : null;
         if (mode) {characterUiController.sail.speed = shipController;}
     }

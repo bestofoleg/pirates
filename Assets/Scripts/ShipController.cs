@@ -20,6 +20,8 @@ public class ShipController : MonoBehaviour
 
     private float currentYAngle;
 
+    public bool isFixedCharacterPosition = false;
+
     private void Awake() 
     {
         currentYAngle = transform.rotation.eulerAngles.y;
@@ -76,7 +78,10 @@ public class ShipController : MonoBehaviour
         {
             forwardspeedsail = 2;
         }
-        characterTransform.position = targetPoint.position;
-        characterTransform.rotation = transform.rotation;
+
+        if (isFixedCharacterPosition) {
+            characterTransform.position = targetPoint.position;
+            characterTransform.rotation = transform.rotation;
+        }
     }
 }

@@ -11,6 +11,10 @@ public class ShootGunsControll : MonoBehaviour {
     public GameObject l_fire;
     
     public GameObject r_fire;
+
+    public Image leftColldownImage;
+
+    public Image rightColldownImage;
     
     public Colldownfire fire_l;
     

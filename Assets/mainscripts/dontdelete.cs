@@ -13,12 +13,12 @@ public class dontdelete : MonoBehaviour {
     private float time;
 
     void Start() {
-        col_r = firecold.colldowns;
-        time = firecold.colldowns.fillAmount;
+        /*col_r = firecold.colldowns;
+        time = firecold.colldowns.fillAmount;*/
     }
 
     void Awake() {
-        cl.colldowns.fillAmount -= Time.deltaTime / 8;
-        firecold.colldowns.fillAmount -= Time.deltaTime / 8;
+        /*cl.colldowns.fillAmount -= Time.deltaTime / 8;
+        firecold.colldowns.fillAmount -= Time.deltaTime / 8;*/
     }
 }

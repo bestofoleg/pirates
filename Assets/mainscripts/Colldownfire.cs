@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class Colldownfire : MonoBehaviour {   
-    public GameObject fill;
-
-    public Image colldowns;
+    public Image colldownImage;
 
     public float colldownTime = 2.5f;
     
@@ -18,11 +16,11 @@ public class Colldownfire : MonoBehaviour {
             updateAmount(secondsForWait / startTimeBuffer);
             secondsForWait -= dividerValue;
         }
-        gameObject.SetActive(false);
+        colldownImage.gameObject.SetActive(false);
     }
 
     private void updateAmount(float percents) {
-        colldowns.fillAmount = percents;
+        colldownImage.fillAmount = percents;
     }
 
     public void StartCountdownTimer() {
