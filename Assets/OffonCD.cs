@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class OffonCD : MonoBehaviour
 {
+    GameObject[] oncd;
     GameObject[] offmenu;
     GameObject[] onmenu;
     void Start()
     {
+        oncd = GameObject.FindGameObjectsWithTag("Cdon");
         offmenu = GameObject.FindGameObjectsWithTag("offmenu");
         onmenu = GameObject.FindGameObjectsWithTag("onmenu");
     }
@@ -15,6 +17,11 @@ public class OffonCD : MonoBehaviour
 
     void FixedUpdate()
     {
+        for (int i = 0; i < oncd.Length; i++)
+        {
+
+            oncd[i].SetActive(true);
+        }
         for (int i = 0; i < onmenu.Length; i++)
         {
 

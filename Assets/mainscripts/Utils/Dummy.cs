@@ -50,7 +50,7 @@ public class Dummy : MonoBehaviour
     private void spendHealth(int damage)
     {
         if (health > 0)
-        {
+        {  
             health -= damage;
         }
     }

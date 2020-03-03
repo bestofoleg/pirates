@@ -11,6 +11,8 @@ TagManager:
   - offmenu
   - onmenu
   - NoNo
+  - nomoney
+  - Cdon
   layers:
   - Default
   - TransparentFX
