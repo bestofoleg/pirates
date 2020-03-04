@@ -72,6 +72,7 @@
     <Compile Include="Assets\Fantasy Skybox\Scripts\FantasySkyboxUIController.cs" />
     <Compile Include="Assets\Fantasy Skybox\Scripts\FSPlayer.cs" />
     <Compile Include="Assets\GUI Animator FREE\Scripts\Demo\Demo.cs" />
+    <Compile Include="Assets\HPbaff.cs" />
     <Compile Include="Assets\main models\Character\CharacterParameters.cs" />
     <Compile Include="Assets\main models\Character\Inventory.cs" />
     <Compile Include="Assets\main models\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Assets\mainscripts\Utils\DamageTrigger.cs" />
     <Compile Include="Assets\mainscripts\Utils\DoubleClickEvent.cs" />
     <Compile Include="Assets\mainscripts\Utils\Dummy.cs" />
+    <Compile Include="Assets\OffonBA.cs" />
     <Compile Include="Assets\OffonCD.cs" />
     <Compile Include="Assets\Opendoor.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OffonBA : MonoBehaviour
+public class OffonCD : MonoBehaviour
 {
     GameObject[] oncd;
     GameObject[] offmenu;
@@ -20,7 +20,7 @@ public class OffonBA : MonoBehaviour
         for (int i = 0; i < oncd.Length; i++)
         {
 
-            oncd[i].SetActive(false);
+            oncd[i].SetActive(true);
         }
         for (int i = 0; i < onmenu.Length; i++)
         {

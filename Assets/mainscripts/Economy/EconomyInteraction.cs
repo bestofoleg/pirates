@@ -19,7 +19,7 @@ public class EconomyInteraction : MonoBehaviour
 
     private CharacterUIController _controller;
 
-    private void Awake()
+    private void Start()
     {
 
         GameObject lol = GameObject.FindGameObjectWithTag("NoNo");
