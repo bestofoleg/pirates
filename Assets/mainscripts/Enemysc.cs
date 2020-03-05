@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 public class Enemysc : MonoBehaviour
-{ string PlayerTag;
+{
+    string PlayerTag;
+    shootsc scs;
    public Animator anim;
     GameObject Player;
    public NavMeshAgent mesh;
@@ -11,6 +13,7 @@ public class Enemysc : MonoBehaviour
     public HpPlayer hpplayer;
     void Start()
     {
+        scs = shootsc.FindObjectOfType<shootsc>();
         mesh = GetComponent<NavMeshAgent>();
         mesh.enabled = false;
         anim = GetComponent<Animator>();
@@ -35,10 +38,13 @@ public class Enemysc : MonoBehaviour
     }
     public void DamageOnPlayer(Collider other)
     {
-       
+        if (scs.bl == false) {
             hpplayer.hp -= 0.1f;
-      
-
+        }
+        if (scs.bl == true)
+        {
+            hpplayer.hp -= 0f;
+        }
     }
 
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Shootpistol : MonoBehaviour
 {
+    public Animator anim;
+    public bool bl;
     public Dummy dum;
     public float hitpower;
     public float distance;
@@ -44,5 +46,21 @@ public class Shootpistol : MonoBehaviour
         {
             Debug.Log("notcross object" );
         }
+    }
+    public void shootend()
+    {
+        anim.SetBool("switchpistolidle", false);
+    }
+
+    public void blStart()
+    {
+        bl = true;
+
+    }
+    public void blend()
+    {
+        anim.SetBool("Block", false);
+        bl = false;
+
     }
 }
