@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class Enemysc : MonoBehaviour
 {
     string PlayerTag;
-    shootsc scs;
+  public  shootsc scs;
    public Animator anim;
     GameObject Player;
    public NavMeshAgent mesh;
@@ -38,10 +38,10 @@ public class Enemysc : MonoBehaviour
     }
     public void DamageOnPlayer(Collider other)
     {
-        if (scs.bl == false) {
+        if (scs.bl == true) {
             hpplayer.hp -= 0.1f;
         }
-        if (scs.bl == true)
+        if (scs.bl == false)
         {
             hpplayer.hp -= 0f;
         }
@@ -49,9 +49,12 @@ public class Enemysc : MonoBehaviour
 
 
     void Update()
+
     { if(!Player) {
             hpplayer = HpPlayer.FindObjectOfType<HpPlayer>();
             Player = GameObject.FindWithTag("Player"); }
+       
+     
         mesh.SetDestination(Player.transform.position);
     }
     

@@ -92,6 +92,7 @@
     <Compile Include="Assets\mainscripts\Economy\UI\GoldView.cs" />
     <Compile Include="Assets\mainscripts\enemydie.cs" />
     <Compile Include="Assets\mainscripts\Enemysc.cs" />
+    <Compile Include="Assets\mainscripts\Enemyshipsc.cs" />
     <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\GameEntity\FloatingGameEntityFlat.cs" />
     <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\GameEntity\FloatingGameEntityRealist.cs" />
     <Compile Include="Assets\mainscripts\FloatingEntities\Scripts\GameEntity\FloatingGameEntityStorm.cs" />

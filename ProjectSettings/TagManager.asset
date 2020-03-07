@@ -13,6 +13,8 @@ TagManager:
   - NoNo
   - nomoney
   - Cdon
+  - Bullet
+  - Ship
   layers:
   - Default
   - TransparentFX
