@@ -15,6 +15,8 @@ public class Dummy : MonoBehaviour
 
     public BulkMessageWordUI damageQuantityTextUI;
 
+    public bool isTriggeredDummy = false;
+
     public int maxHealth;
 
     private void Awake()
@@ -44,6 +46,14 @@ public class Dummy : MonoBehaviour
         else
         {
             damageQuantity.text.text = dummyIsDeathMessage;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (isTriggeredDummy && other.tag.Equals("Bullet")) {
+            Bullet bullet = other.gameObject.GetComponent<Bullet> ();
+            Damage(bullet.damage);
+            Destroy(other.gameObject);
         }
     }
 

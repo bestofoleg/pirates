@@ -8,10 +8,9 @@ public class Bullet : MonoBehaviour
 
     public int damage;
 
-    private void OnTriggerEnter(Collider other) {
-        if (dummyTag.Equals(other.gameObject.tag)) {
-            other.gameObject.GetComponent<Dummy>().Damage(damage);
-            Destroy(this.gameObject);
-        }
+    public int lifeTime = 10;
+
+    private void Awake() {
+        //Destroy(this.gameObject, lifeTime);
     }
 }
